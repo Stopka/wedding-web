@@ -2,7 +2,7 @@ services:
   frontend:
     image: skorpil/wedding-frontend:dev
     labels:
-      - "traefik.http.routers.frontend.tls.certresolver=local"
+      - "traefik.http.routers.wedding-frontend.tls.certresolver=local"
     environment:
       NODE_ENV: development
     build:
@@ -17,7 +17,7 @@ services:
       - ./build/payload/application:/home/node/app
       - ./build/payload/application/node_modules:/home/node/app/node_modules
     labels:
-      - "traefik.http.routers.payload.tls.certresolver=local"
+      - "traefik.http.routers.wedding-payload.tls.certresolver=local"
   mongo:
     ports:
       - "27017:27017"

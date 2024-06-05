@@ -21,11 +21,11 @@ services:
       - 'GRAPHQL_URL=http://payload:3000/api/graphql'
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.frontend.rule=Host(`${HOST}`)"
-      - "traefik.http.routers.frontend.entrypoints=https"
-      - "traefik.http.routers.frontend.tls=true"
-      - "traefik.http.routers.frontend.tls.certresolver=letsencrypt"
-      - "traefik.http.services.frontend.loadbalancer.server.port=3000"
+      - "traefik.http.routers.wedding-frontend.rule=Host(`${HOST}`)"
+      - "traefik.http.routers.wedding-frontend.entrypoints=https"
+      - "traefik.http.routers.wedding-frontend.tls=true"
+      - "traefik.http.routers.wedding-frontend.tls.certresolver=letsencrypt"
+      - "traefik.http.services.wedding-frontend.loadbalancer.server.port=3000"
     networks:
       proxy:
       wedding:
@@ -47,11 +47,11 @@ services:
       proxy:
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.payload.rule=Host(`${HOST}`)&&PathPrefix(`/admin`,`/api`,`/uploads`)"
-      - "traefik.http.routers.payload.entrypoints=https"
-      - "traefik.http.routers.payload.tls=true"
-      - "traefik.http.routers.payload.tls.certresolver=letsencrypt"
-      - "traefik.http.services.payload.loadbalancer.server.port=3000"
+      - "traefik.http.routers.wedding-payload.rule=Host(`${HOST}`)&&PathPrefix(`/admin`,`/api`,`/uploads`)"
+      - "traefik.http.routers.wedding-payload.entrypoints=https"
+      - "traefik.http.routers.wedding-payload.tls=true"
+      - "traefik.http.routers.wedding-payload.tls.certresolver=letsencrypt"
+      - "traefik.http.services.wedding-payload.loadbalancer.server.port=3000"
     environment:
       TZ: ${TIMEZONE}
       MONGODB_URI: mongodb://root:${MONGO_PASSWORD}@mongo:27017/admin
