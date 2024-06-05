@@ -1,0 +1,40 @@
+{
+  "default": {
+
+  },
+  "date": {
+    "now": "Současnost",
+    "month0": "Leden",
+    "month1": "Únor",
+    "month2": "Březen",
+    "month3": "Duben",
+    "month4": "Květen",
+    "month5": "Červen",
+    "month6": "Červenec",
+    "month7": "Srpen",
+    "month8": "Září",
+    "month9": "Říjen",
+    "month10": "Listopad",
+    "month11": "Prosinec",
+    "dateFormat": "%d. %m %Y",
+    "dateMonth0": "ledna",
+    "dateMonth1": "února",
+    "dateMonth2": "března",
+    "dateMonth3": "dubna",
+    "dateMonth4": "května",
+    "dateMonth5": "června",
+    "dateMonth6": "července",
+    "dateMonth7": "srpna",
+    "dateMonth8": "září",
+    "dateMonth9": "října",
+    "dateMonth10": "listopadu",
+    "dateMonth11": "prosince"
+  },
+  "pagination": {
+    "navigation": "Stránkování",
+    "first": "První",
+    "next": "Další",
+    "previous": "Předchozí",
+    "last": "Poslední"
+  }
+}

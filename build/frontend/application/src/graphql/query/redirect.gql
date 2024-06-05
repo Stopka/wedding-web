@@ -1,0 +1,24 @@
+query Redirect($path: String!){
+  Redirects(where: {from: {equals: $path}}, limit: 1, page: 1){
+    docs {
+      id
+      from
+      to {
+        url
+        __typename
+        reference{
+          relationTo
+          value {
+            __typename
+            ... on Page {
+              id
+              slug
+            }
+          }
+        }
+      }
+      createdAt
+      updatedAt
+    }
+  }
+}

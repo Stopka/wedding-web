@@ -1,0 +1,10 @@
+query HomePage($locale: LocaleInputType!){
+  HomePage(draft: false, locale: $locale){
+    title
+    content
+    image{
+      ...Image
+    }
+    updatedAt
+  }
+}

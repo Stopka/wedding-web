@@ -1,0 +1,38 @@
+{
+  "default": {},
+  "date": {
+    "now": "Now",
+    "month0": "January",
+    "month1": "February",
+    "month2": "March",
+    "month3": "April",
+    "month4": "May",
+    "month5": "June",
+    "month6": "July",
+    "month7": "August",
+    "month8": "September",
+    "month9": "October",
+    "month10": "November",
+    "month11": "December",
+    "dateFormat": "%d %m %Y",
+    "dateMonth0": "January",
+    "dateMonth1": "February",
+    "dateMonth2": "March",
+    "dateMonth3": "April",
+    "dateMonth4": "May",
+    "dateMonth5": "June",
+    "dateMonth6": "July",
+    "dateMonth7": "August",
+    "dateMonth8": "September",
+    "dateMonth9": "October",
+    "dateMonth10": "November",
+    "dateMonth11": "December"
+  },
+  "pagination": {
+    "navigation": "Page navigation",
+    "first": "First",
+    "next": "Next",
+    "previous": "Previous",
+    "last": "Last"
+  }
+}

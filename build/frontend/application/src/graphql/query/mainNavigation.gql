@@ -1,0 +1,8 @@
+query MainNavigation($locale: LocaleInputType!){
+    MainNavigation(draft: false, locale: $locale){
+        updatedAt
+        items {
+            ...NavigationItem
+        }
+    }
+}

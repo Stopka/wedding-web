@@ -1,0 +1,11 @@
+query Page($locale: LocaleInputType!, $id: String!){
+  Page(draft: false, locale: $locale, id: $id, fallbackLocale: cs){
+    title
+    slug
+    content
+    image{
+      ...Image
+    }
+    updatedAt
+  }
+}
