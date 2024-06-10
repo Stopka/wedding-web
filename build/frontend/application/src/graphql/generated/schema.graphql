@@ -450,6 +450,69 @@ input HomePageVersion_Version_Image_mimeType_operator {
   not_in: [String]
 }
 
+input HomePageVersion_Version_Image_sizes__face__filename_operator {
+  all: [String]
+  contains: String
+  equals: String
+  exists: Boolean
+  in: [String]
+  like: String
+  not_equals: String
+  not_in: [String]
+}
+
+input HomePageVersion_Version_Image_sizes__face__filesize_operator {
+  equals: Float
+  exists: Boolean
+  greater_than: Float
+  greater_than_equal: Float
+  less_than: Float
+  less_than_equal: Float
+  not_equals: Float
+}
+
+input HomePageVersion_Version_Image_sizes__face__height_operator {
+  equals: Float
+  exists: Boolean
+  greater_than: Float
+  greater_than_equal: Float
+  less_than: Float
+  less_than_equal: Float
+  not_equals: Float
+}
+
+input HomePageVersion_Version_Image_sizes__face__mimeType_operator {
+  all: [String]
+  contains: String
+  equals: String
+  exists: Boolean
+  in: [String]
+  like: String
+  not_equals: String
+  not_in: [String]
+}
+
+input HomePageVersion_Version_Image_sizes__face__url_operator {
+  all: [String]
+  contains: String
+  equals: String
+  exists: Boolean
+  in: [String]
+  like: String
+  not_equals: String
+  not_in: [String]
+}
+
+input HomePageVersion_Version_Image_sizes__face__width_operator {
+  equals: Float
+  exists: Boolean
+  greater_than: Float
+  greater_than_equal: Float
+  less_than: Float
+  less_than_equal: Float
+  not_equals: Float
+}
+
 input HomePageVersion_Version_Image_title_operator {
   all: [String]
   contains: String
@@ -492,6 +555,12 @@ input HomePageVersion_Version_Image_where {
   height: HomePageVersion_Version_Image_height_operator
   id: HomePageVersion_Version_Image_id_operator
   mimeType: HomePageVersion_Version_Image_mimeType_operator
+  sizes__face__filename: HomePageVersion_Version_Image_sizes__face__filename_operator
+  sizes__face__filesize: HomePageVersion_Version_Image_sizes__face__filesize_operator
+  sizes__face__height: HomePageVersion_Version_Image_sizes__face__height_operator
+  sizes__face__mimeType: HomePageVersion_Version_Image_sizes__face__mimeType_operator
+  sizes__face__url: HomePageVersion_Version_Image_sizes__face__url_operator
+  sizes__face__width: HomePageVersion_Version_Image_sizes__face__width_operator
   title: HomePageVersion_Version_Image_title_operator
   updatedAt: HomePageVersion_Version_Image_updatedAt_operator
   url: HomePageVersion_Version_Image_url_operator
@@ -508,6 +577,12 @@ input HomePageVersion_Version_Image_where_and {
   height: HomePageVersion_Version_Image_height_operator
   id: HomePageVersion_Version_Image_id_operator
   mimeType: HomePageVersion_Version_Image_mimeType_operator
+  sizes__face__filename: HomePageVersion_Version_Image_sizes__face__filename_operator
+  sizes__face__filesize: HomePageVersion_Version_Image_sizes__face__filesize_operator
+  sizes__face__height: HomePageVersion_Version_Image_sizes__face__height_operator
+  sizes__face__mimeType: HomePageVersion_Version_Image_sizes__face__mimeType_operator
+  sizes__face__url: HomePageVersion_Version_Image_sizes__face__url_operator
+  sizes__face__width: HomePageVersion_Version_Image_sizes__face__width_operator
   title: HomePageVersion_Version_Image_title_operator
   updatedAt: HomePageVersion_Version_Image_updatedAt_operator
   url: HomePageVersion_Version_Image_url_operator
@@ -524,6 +599,12 @@ input HomePageVersion_Version_Image_where_or {
   height: HomePageVersion_Version_Image_height_operator
   id: HomePageVersion_Version_Image_id_operator
   mimeType: HomePageVersion_Version_Image_mimeType_operator
+  sizes__face__filename: HomePageVersion_Version_Image_sizes__face__filename_operator
+  sizes__face__filesize: HomePageVersion_Version_Image_sizes__face__filesize_operator
+  sizes__face__height: HomePageVersion_Version_Image_sizes__face__height_operator
+  sizes__face__mimeType: HomePageVersion_Version_Image_sizes__face__mimeType_operator
+  sizes__face__url: HomePageVersion_Version_Image_sizes__face__url_operator
+  sizes__face__width: HomePageVersion_Version_Image_sizes__face__width_operator
   title: HomePageVersion_Version_Image_title_operator
   updatedAt: HomePageVersion_Version_Image_updatedAt_operator
   url: HomePageVersion_Version_Image_url_operator
@@ -620,6 +701,69 @@ input HomePage_Image_mimeType_operator {
   not_in: [String]
 }
 
+input HomePage_Image_sizes__face__filename_operator {
+  all: [String]
+  contains: String
+  equals: String
+  exists: Boolean
+  in: [String]
+  like: String
+  not_equals: String
+  not_in: [String]
+}
+
+input HomePage_Image_sizes__face__filesize_operator {
+  equals: Float
+  exists: Boolean
+  greater_than: Float
+  greater_than_equal: Float
+  less_than: Float
+  less_than_equal: Float
+  not_equals: Float
+}
+
+input HomePage_Image_sizes__face__height_operator {
+  equals: Float
+  exists: Boolean
+  greater_than: Float
+  greater_than_equal: Float
+  less_than: Float
+  less_than_equal: Float
+  not_equals: Float
+}
+
+input HomePage_Image_sizes__face__mimeType_operator {
+  all: [String]
+  contains: String
+  equals: String
+  exists: Boolean
+  in: [String]
+  like: String
+  not_equals: String
+  not_in: [String]
+}
+
+input HomePage_Image_sizes__face__url_operator {
+  all: [String]
+  contains: String
+  equals: String
+  exists: Boolean
+  in: [String]
+  like: String
+  not_equals: String
+  not_in: [String]
+}
+
+input HomePage_Image_sizes__face__width_operator {
+  equals: Float
+  exists: Boolean
+  greater_than: Float
+  greater_than_equal: Float
+  less_than: Float
+  less_than_equal: Float
+  not_equals: Float
+}
+
 input HomePage_Image_title_operator {
   all: [String]
   contains: String
@@ -662,6 +806,12 @@ input HomePage_Image_where {
   height: HomePage_Image_height_operator
   id: HomePage_Image_id_operator
   mimeType: HomePage_Image_mimeType_operator
+  sizes__face__filename: HomePage_Image_sizes__face__filename_operator
+  sizes__face__filesize: HomePage_Image_sizes__face__filesize_operator
+  sizes__face__height: HomePage_Image_sizes__face__height_operator
+  sizes__face__mimeType: HomePage_Image_sizes__face__mimeType_operator
+  sizes__face__url: HomePage_Image_sizes__face__url_operator
+  sizes__face__width: HomePage_Image_sizes__face__width_operator
   title: HomePage_Image_title_operator
   updatedAt: HomePage_Image_updatedAt_operator
   url: HomePage_Image_url_operator
@@ -678,6 +828,12 @@ input HomePage_Image_where_and {
   height: HomePage_Image_height_operator
   id: HomePage_Image_id_operator
   mimeType: HomePage_Image_mimeType_operator
+  sizes__face__filename: HomePage_Image_sizes__face__filename_operator
+  sizes__face__filesize: HomePage_Image_sizes__face__filesize_operator
+  sizes__face__height: HomePage_Image_sizes__face__height_operator
+  sizes__face__mimeType: HomePage_Image_sizes__face__mimeType_operator
+  sizes__face__url: HomePage_Image_sizes__face__url_operator
+  sizes__face__width: HomePage_Image_sizes__face__width_operator
   title: HomePage_Image_title_operator
   updatedAt: HomePage_Image_updatedAt_operator
   url: HomePage_Image_url_operator
@@ -694,6 +850,12 @@ input HomePage_Image_where_or {
   height: HomePage_Image_height_operator
   id: HomePage_Image_id_operator
   mimeType: HomePage_Image_mimeType_operator
+  sizes__face__filename: HomePage_Image_sizes__face__filename_operator
+  sizes__face__filesize: HomePage_Image_sizes__face__filesize_operator
+  sizes__face__height: HomePage_Image_sizes__face__height_operator
+  sizes__face__mimeType: HomePage_Image_sizes__face__mimeType_operator
+  sizes__face__url: HomePage_Image_sizes__face__url_operator
+  sizes__face__width: HomePage_Image_sizes__face__width_operator
   title: HomePage_Image_title_operator
   updatedAt: HomePage_Image_updatedAt_operator
   url: HomePage_Image_url_operator
@@ -1172,6 +1334,7 @@ type Media {
   height: Float
   id: String
   mimeType: String
+  sizes: Media_Sizes
   title: String
   updatedAt: DateTime
   url: String
@@ -1205,6 +1368,7 @@ type MediaDocAccessFields {
   filesize: MediaDocAccessFields_filesize
   height: MediaDocAccessFields_height
   mimeType: MediaDocAccessFields_mimeType
+  sizes: MediaDocAccessFields_sizes
   title: MediaDocAccessFields_title
   updatedAt: MediaDocAccessFields_updatedAt
   url: MediaDocAccessFields_url
@@ -1349,6 +1513,205 @@ type MediaDocAccessFields_mimeType_Update {
   permission: Boolean!
 }
 
+type MediaDocAccessFields_sizes {
+  create: MediaDocAccessFields_sizes_Create
+  delete: MediaDocAccessFields_sizes_Delete
+  fields: MediaDocAccessFields_sizes_Fields
+  read: MediaDocAccessFields_sizes_Read
+  update: MediaDocAccessFields_sizes_Update
+}
+
+type MediaDocAccessFields_sizes_Create {
+  permission: Boolean!
+}
+
+type MediaDocAccessFields_sizes_Delete {
+  permission: Boolean!
+}
+
+type MediaDocAccessFields_sizes_Fields {
+  face: MediaDocAccessFields_sizes_face
+}
+
+type MediaDocAccessFields_sizes_Read {
+  permission: Boolean!
+}
+
+type MediaDocAccessFields_sizes_Update {
+  permission: Boolean!
+}
+
+type MediaDocAccessFields_sizes_face {
+  create: MediaDocAccessFields_sizes_face_Create
+  delete: MediaDocAccessFields_sizes_face_Delete
+  fields: MediaDocAccessFields_sizes_face_Fields
+  read: MediaDocAccessFields_sizes_face_Read
+  update: MediaDocAccessFields_sizes_face_Update
+}
+
+type MediaDocAccessFields_sizes_face_Create {
+  permission: Boolean!
+}
+
+type MediaDocAccessFields_sizes_face_Delete {
+  permission: Boolean!
+}
+
+type MediaDocAccessFields_sizes_face_Fields {
+  filename: MediaDocAccessFields_sizes_face_filename
+  filesize: MediaDocAccessFields_sizes_face_filesize
+  height: MediaDocAccessFields_sizes_face_height
+  mimeType: MediaDocAccessFields_sizes_face_mimeType
+  url: MediaDocAccessFields_sizes_face_url
+  width: MediaDocAccessFields_sizes_face_width
+}
+
+type MediaDocAccessFields_sizes_face_Read {
+  permission: Boolean!
+}
+
+type MediaDocAccessFields_sizes_face_Update {
+  permission: Boolean!
+}
+
+type MediaDocAccessFields_sizes_face_filename {
+  create: MediaDocAccessFields_sizes_face_filename_Create
+  delete: MediaDocAccessFields_sizes_face_filename_Delete
+  read: MediaDocAccessFields_sizes_face_filename_Read
+  update: MediaDocAccessFields_sizes_face_filename_Update
+}
+
+type MediaDocAccessFields_sizes_face_filename_Create {
+  permission: Boolean!
+}
+
+type MediaDocAccessFields_sizes_face_filename_Delete {
+  permission: Boolean!
+}
+
+type MediaDocAccessFields_sizes_face_filename_Read {
+  permission: Boolean!
+}
+
+type MediaDocAccessFields_sizes_face_filename_Update {
+  permission: Boolean!
+}
+
+type MediaDocAccessFields_sizes_face_filesize {
+  create: MediaDocAccessFields_sizes_face_filesize_Create
+  delete: MediaDocAccessFields_sizes_face_filesize_Delete
+  read: MediaDocAccessFields_sizes_face_filesize_Read
+  update: MediaDocAccessFields_sizes_face_filesize_Update
+}
+
+type MediaDocAccessFields_sizes_face_filesize_Create {
+  permission: Boolean!
+}
+
+type MediaDocAccessFields_sizes_face_filesize_Delete {
+  permission: Boolean!
+}
+
+type MediaDocAccessFields_sizes_face_filesize_Read {
+  permission: Boolean!
+}
+
+type MediaDocAccessFields_sizes_face_filesize_Update {
+  permission: Boolean!
+}
+
+type MediaDocAccessFields_sizes_face_height {
+  create: MediaDocAccessFields_sizes_face_height_Create
+  delete: MediaDocAccessFields_sizes_face_height_Delete
+  read: MediaDocAccessFields_sizes_face_height_Read
+  update: MediaDocAccessFields_sizes_face_height_Update
+}
+
+type MediaDocAccessFields_sizes_face_height_Create {
+  permission: Boolean!
+}
+
+type MediaDocAccessFields_sizes_face_height_Delete {
+  permission: Boolean!
+}
+
+type MediaDocAccessFields_sizes_face_height_Read {
+  permission: Boolean!
+}
+
+type MediaDocAccessFields_sizes_face_height_Update {
+  permission: Boolean!
+}
+
+type MediaDocAccessFields_sizes_face_mimeType {
+  create: MediaDocAccessFields_sizes_face_mimeType_Create
+  delete: MediaDocAccessFields_sizes_face_mimeType_Delete
+  read: MediaDocAccessFields_sizes_face_mimeType_Read
+  update: MediaDocAccessFields_sizes_face_mimeType_Update
+}
+
+type MediaDocAccessFields_sizes_face_mimeType_Create {
+  permission: Boolean!
+}
+
+type MediaDocAccessFields_sizes_face_mimeType_Delete {
+  permission: Boolean!
+}
+
+type MediaDocAccessFields_sizes_face_mimeType_Read {
+  permission: Boolean!
+}
+
+type MediaDocAccessFields_sizes_face_mimeType_Update {
+  permission: Boolean!
+}
+
+type MediaDocAccessFields_sizes_face_url {
+  create: MediaDocAccessFields_sizes_face_url_Create
+  delete: MediaDocAccessFields_sizes_face_url_Delete
+  read: MediaDocAccessFields_sizes_face_url_Read
+  update: MediaDocAccessFields_sizes_face_url_Update
+}
+
+type MediaDocAccessFields_sizes_face_url_Create {
+  permission: Boolean!
+}
+
+type MediaDocAccessFields_sizes_face_url_Delete {
+  permission: Boolean!
+}
+
+type MediaDocAccessFields_sizes_face_url_Read {
+  permission: Boolean!
+}
+
+type MediaDocAccessFields_sizes_face_url_Update {
+  permission: Boolean!
+}
+
+type MediaDocAccessFields_sizes_face_width {
+  create: MediaDocAccessFields_sizes_face_width_Create
+  delete: MediaDocAccessFields_sizes_face_width_Delete
+  read: MediaDocAccessFields_sizes_face_width_Read
+  update: MediaDocAccessFields_sizes_face_width_Update
+}
+
+type MediaDocAccessFields_sizes_face_width_Create {
+  permission: Boolean!
+}
+
+type MediaDocAccessFields_sizes_face_width_Delete {
+  permission: Boolean!
+}
+
+type MediaDocAccessFields_sizes_face_width_Read {
+  permission: Boolean!
+}
+
+type MediaDocAccessFields_sizes_face_width_Update {
+  permission: Boolean!
+}
+
 type MediaDocAccessFields_title {
   create: MediaDocAccessFields_title_Create
   delete: MediaDocAccessFields_title_Delete
@@ -1448,6 +1811,7 @@ type MediaFields {
   filesize: MediaFields_filesize
   height: MediaFields_height
   mimeType: MediaFields_mimeType
+  sizes: MediaFields_sizes
   title: MediaFields_title
   updatedAt: MediaFields_updatedAt
   url: MediaFields_url
@@ -1592,6 +1956,205 @@ type MediaFields_mimeType_Update {
   permission: Boolean!
 }
 
+type MediaFields_sizes {
+  create: MediaFields_sizes_Create
+  delete: MediaFields_sizes_Delete
+  fields: MediaFields_sizes_Fields
+  read: MediaFields_sizes_Read
+  update: MediaFields_sizes_Update
+}
+
+type MediaFields_sizes_Create {
+  permission: Boolean!
+}
+
+type MediaFields_sizes_Delete {
+  permission: Boolean!
+}
+
+type MediaFields_sizes_Fields {
+  face: MediaFields_sizes_face
+}
+
+type MediaFields_sizes_Read {
+  permission: Boolean!
+}
+
+type MediaFields_sizes_Update {
+  permission: Boolean!
+}
+
+type MediaFields_sizes_face {
+  create: MediaFields_sizes_face_Create
+  delete: MediaFields_sizes_face_Delete
+  fields: MediaFields_sizes_face_Fields
+  read: MediaFields_sizes_face_Read
+  update: MediaFields_sizes_face_Update
+}
+
+type MediaFields_sizes_face_Create {
+  permission: Boolean!
+}
+
+type MediaFields_sizes_face_Delete {
+  permission: Boolean!
+}
+
+type MediaFields_sizes_face_Fields {
+  filename: MediaFields_sizes_face_filename
+  filesize: MediaFields_sizes_face_filesize
+  height: MediaFields_sizes_face_height
+  mimeType: MediaFields_sizes_face_mimeType
+  url: MediaFields_sizes_face_url
+  width: MediaFields_sizes_face_width
+}
+
+type MediaFields_sizes_face_Read {
+  permission: Boolean!
+}
+
+type MediaFields_sizes_face_Update {
+  permission: Boolean!
+}
+
+type MediaFields_sizes_face_filename {
+  create: MediaFields_sizes_face_filename_Create
+  delete: MediaFields_sizes_face_filename_Delete
+  read: MediaFields_sizes_face_filename_Read
+  update: MediaFields_sizes_face_filename_Update
+}
+
+type MediaFields_sizes_face_filename_Create {
+  permission: Boolean!
+}
+
+type MediaFields_sizes_face_filename_Delete {
+  permission: Boolean!
+}
+
+type MediaFields_sizes_face_filename_Read {
+  permission: Boolean!
+}
+
+type MediaFields_sizes_face_filename_Update {
+  permission: Boolean!
+}
+
+type MediaFields_sizes_face_filesize {
+  create: MediaFields_sizes_face_filesize_Create
+  delete: MediaFields_sizes_face_filesize_Delete
+  read: MediaFields_sizes_face_filesize_Read
+  update: MediaFields_sizes_face_filesize_Update
+}
+
+type MediaFields_sizes_face_filesize_Create {
+  permission: Boolean!
+}
+
+type MediaFields_sizes_face_filesize_Delete {
+  permission: Boolean!
+}
+
+type MediaFields_sizes_face_filesize_Read {
+  permission: Boolean!
+}
+
+type MediaFields_sizes_face_filesize_Update {
+  permission: Boolean!
+}
+
+type MediaFields_sizes_face_height {
+  create: MediaFields_sizes_face_height_Create
+  delete: MediaFields_sizes_face_height_Delete
+  read: MediaFields_sizes_face_height_Read
+  update: MediaFields_sizes_face_height_Update
+}
+
+type MediaFields_sizes_face_height_Create {
+  permission: Boolean!
+}
+
+type MediaFields_sizes_face_height_Delete {
+  permission: Boolean!
+}
+
+type MediaFields_sizes_face_height_Read {
+  permission: Boolean!
+}
+
+type MediaFields_sizes_face_height_Update {
+  permission: Boolean!
+}
+
+type MediaFields_sizes_face_mimeType {
+  create: MediaFields_sizes_face_mimeType_Create
+  delete: MediaFields_sizes_face_mimeType_Delete
+  read: MediaFields_sizes_face_mimeType_Read
+  update: MediaFields_sizes_face_mimeType_Update
+}
+
+type MediaFields_sizes_face_mimeType_Create {
+  permission: Boolean!
+}
+
+type MediaFields_sizes_face_mimeType_Delete {
+  permission: Boolean!
+}
+
+type MediaFields_sizes_face_mimeType_Read {
+  permission: Boolean!
+}
+
+type MediaFields_sizes_face_mimeType_Update {
+  permission: Boolean!
+}
+
+type MediaFields_sizes_face_url {
+  create: MediaFields_sizes_face_url_Create
+  delete: MediaFields_sizes_face_url_Delete
+  read: MediaFields_sizes_face_url_Read
+  update: MediaFields_sizes_face_url_Update
+}
+
+type MediaFields_sizes_face_url_Create {
+  permission: Boolean!
+}
+
+type MediaFields_sizes_face_url_Delete {
+  permission: Boolean!
+}
+
+type MediaFields_sizes_face_url_Read {
+  permission: Boolean!
+}
+
+type MediaFields_sizes_face_url_Update {
+  permission: Boolean!
+}
+
+type MediaFields_sizes_face_width {
+  create: MediaFields_sizes_face_width_Create
+  delete: MediaFields_sizes_face_width_Delete
+  read: MediaFields_sizes_face_width_Read
+  update: MediaFields_sizes_face_width_Update
+}
+
+type MediaFields_sizes_face_width_Create {
+  permission: Boolean!
+}
+
+type MediaFields_sizes_face_width_Delete {
+  permission: Boolean!
+}
+
+type MediaFields_sizes_face_width_Read {
+  permission: Boolean!
+}
+
+type MediaFields_sizes_face_width_Update {
+  permission: Boolean!
+}
+
 type MediaFields_title {
   create: MediaFields_title_Create
   delete: MediaFields_title_Delete
@@ -1704,6 +2267,19 @@ type MediaUpdateDocAccess {
   where: JSONObject
 }
 
+type Media_Sizes {
+  face: Media_Sizes_Face
+}
+
+type Media_Sizes_Face {
+  filename: String
+  filesize: Float
+  height: Float
+  mimeType: String
+  url: String
+  width: Float
+}
+
 input Media_alt_operator {
   all: [String]
   contains: String
@@ -1779,6 +2355,69 @@ input Media_mimeType_operator {
   not_in: [String]
 }
 
+input Media_sizes__face__filename_operator {
+  all: [String]
+  contains: String
+  equals: String
+  exists: Boolean
+  in: [String]
+  like: String
+  not_equals: String
+  not_in: [String]
+}
+
+input Media_sizes__face__filesize_operator {
+  equals: Float
+  exists: Boolean
+  greater_than: Float
+  greater_than_equal: Float
+  less_than: Float
+  less_than_equal: Float
+  not_equals: Float
+}
+
+input Media_sizes__face__height_operator {
+  equals: Float
+  exists: Boolean
+  greater_than: Float
+  greater_than_equal: Float
+  less_than: Float
+  less_than_equal: Float
+  not_equals: Float
+}
+
+input Media_sizes__face__mimeType_operator {
+  all: [String]
+  contains: String
+  equals: String
+  exists: Boolean
+  in: [String]
+  like: String
+  not_equals: String
+  not_in: [String]
+}
+
+input Media_sizes__face__url_operator {
+  all: [String]
+  contains: String
+  equals: String
+  exists: Boolean
+  in: [String]
+  like: String
+  not_equals: String
+  not_in: [String]
+}
+
+input Media_sizes__face__width_operator {
+  equals: Float
+  exists: Boolean
+  greater_than: Float
+  greater_than_equal: Float
+  less_than: Float
+  less_than_equal: Float
+  not_equals: Float
+}
+
 input Media_title_operator {
   all: [String]
   contains: String
@@ -1821,6 +2460,12 @@ input Media_where {
   height: Media_height_operator
   id: Media_id_operator
   mimeType: Media_mimeType_operator
+  sizes__face__filename: Media_sizes__face__filename_operator
+  sizes__face__filesize: Media_sizes__face__filesize_operator
+  sizes__face__height: Media_sizes__face__height_operator
+  sizes__face__mimeType: Media_sizes__face__mimeType_operator
+  sizes__face__url: Media_sizes__face__url_operator
+  sizes__face__width: Media_sizes__face__width_operator
   title: Media_title_operator
   updatedAt: Media_updatedAt_operator
   url: Media_url_operator
@@ -1837,6 +2482,12 @@ input Media_where_and {
   height: Media_height_operator
   id: Media_id_operator
   mimeType: Media_mimeType_operator
+  sizes__face__filename: Media_sizes__face__filename_operator
+  sizes__face__filesize: Media_sizes__face__filesize_operator
+  sizes__face__height: Media_sizes__face__height_operator
+  sizes__face__mimeType: Media_sizes__face__mimeType_operator
+  sizes__face__url: Media_sizes__face__url_operator
+  sizes__face__width: Media_sizes__face__width_operator
   title: Media_title_operator
   updatedAt: Media_updatedAt_operator
   url: Media_url_operator
@@ -1853,6 +2504,12 @@ input Media_where_or {
   height: Media_height_operator
   id: Media_id_operator
   mimeType: Media_mimeType_operator
+  sizes__face__filename: Media_sizes__face__filename_operator
+  sizes__face__filesize: Media_sizes__face__filesize_operator
+  sizes__face__height: Media_sizes__face__height_operator
+  sizes__face__mimeType: Media_sizes__face__mimeType_operator
+  sizes__face__url: Media_sizes__face__url_operator
+  sizes__face__width: Media_sizes__face__width_operator
   title: Media_title_operator
   updatedAt: Media_updatedAt_operator
   url: Media_url_operator
@@ -2009,6 +2666,69 @@ input PageVersion_Version_Image_mimeType_operator {
   not_in: [String]
 }
 
+input PageVersion_Version_Image_sizes__face__filename_operator {
+  all: [String]
+  contains: String
+  equals: String
+  exists: Boolean
+  in: [String]
+  like: String
+  not_equals: String
+  not_in: [String]
+}
+
+input PageVersion_Version_Image_sizes__face__filesize_operator {
+  equals: Float
+  exists: Boolean
+  greater_than: Float
+  greater_than_equal: Float
+  less_than: Float
+  less_than_equal: Float
+  not_equals: Float
+}
+
+input PageVersion_Version_Image_sizes__face__height_operator {
+  equals: Float
+  exists: Boolean
+  greater_than: Float
+  greater_than_equal: Float
+  less_than: Float
+  less_than_equal: Float
+  not_equals: Float
+}
+
+input PageVersion_Version_Image_sizes__face__mimeType_operator {
+  all: [String]
+  contains: String
+  equals: String
+  exists: Boolean
+  in: [String]
+  like: String
+  not_equals: String
+  not_in: [String]
+}
+
+input PageVersion_Version_Image_sizes__face__url_operator {
+  all: [String]
+  contains: String
+  equals: String
+  exists: Boolean
+  in: [String]
+  like: String
+  not_equals: String
+  not_in: [String]
+}
+
+input PageVersion_Version_Image_sizes__face__width_operator {
+  equals: Float
+  exists: Boolean
+  greater_than: Float
+  greater_than_equal: Float
+  less_than: Float
+  less_than_equal: Float
+  not_equals: Float
+}
+
 input PageVersion_Version_Image_title_operator {
   all: [String]
   contains: String
@@ -2051,6 +2771,12 @@ input PageVersion_Version_Image_where {
   height: PageVersion_Version_Image_height_operator
   id: PageVersion_Version_Image_id_operator
   mimeType: PageVersion_Version_Image_mimeType_operator
+  sizes__face__filename: PageVersion_Version_Image_sizes__face__filename_operator
+  sizes__face__filesize: PageVersion_Version_Image_sizes__face__filesize_operator
+  sizes__face__height: PageVersion_Version_Image_sizes__face__height_operator
+  sizes__face__mimeType: PageVersion_Version_Image_sizes__face__mimeType_operator
+  sizes__face__url: PageVersion_Version_Image_sizes__face__url_operator
+  sizes__face__width: PageVersion_Version_Image_sizes__face__width_operator
   title: PageVersion_Version_Image_title_operator
   updatedAt: PageVersion_Version_Image_updatedAt_operator
   url: PageVersion_Version_Image_url_operator
@@ -2067,6 +2793,12 @@ input PageVersion_Version_Image_where_and {
   height: PageVersion_Version_Image_height_operator
   id: PageVersion_Version_Image_id_operator
   mimeType: PageVersion_Version_Image_mimeType_operator
+  sizes__face__filename: PageVersion_Version_Image_sizes__face__filename_operator
+  sizes__face__filesize: PageVersion_Version_Image_sizes__face__filesize_operator
+  sizes__face__height: PageVersion_Version_Image_sizes__face__height_operator
+  sizes__face__mimeType: PageVersion_Version_Image_sizes__face__mimeType_operator
+  sizes__face__url: PageVersion_Version_Image_sizes__face__url_operator
+  sizes__face__width: PageVersion_Version_Image_sizes__face__width_operator
   title: PageVersion_Version_Image_title_operator
   updatedAt: PageVersion_Version_Image_updatedAt_operator
   url: PageVersion_Version_Image_url_operator
@@ -2083,6 +2815,12 @@ input PageVersion_Version_Image_where_or {
   height: PageVersion_Version_Image_height_operator
   id: PageVersion_Version_Image_id_operator
   mimeType: PageVersion_Version_Image_mimeType_operator
+  sizes__face__filename: PageVersion_Version_Image_sizes__face__filename_operator
+  sizes__face__filesize: PageVersion_Version_Image_sizes__face__filesize_operator
+  sizes__face__height: PageVersion_Version_Image_sizes__face__height_operator
+  sizes__face__mimeType: PageVersion_Version_Image_sizes__face__mimeType_operator
+  sizes__face__url: PageVersion_Version_Image_sizes__face__url_operator
+  sizes__face__width: PageVersion_Version_Image_sizes__face__width_operator
   title: PageVersion_Version_Image_title_operator
   updatedAt: PageVersion_Version_Image_updatedAt_operator
   url: PageVersion_Version_Image_url_operator
@@ -2179,6 +2917,69 @@ input Page_Image_mimeType_operator {
   not_in: [String]
 }
 
+input Page_Image_sizes__face__filename_operator {
+  all: [String]
+  contains: String
+  equals: String
+  exists: Boolean
+  in: [String]
+  like: String
+  not_equals: String
+  not_in: [String]
+}
+
+input Page_Image_sizes__face__filesize_operator {
+  equals: Float
+  exists: Boolean
+  greater_than: Float
+  greater_than_equal: Float
+  less_than: Float
+  less_than_equal: Float
+  not_equals: Float
+}
+
+input Page_Image_sizes__face__height_operator {
+  equals: Float
+  exists: Boolean
+  greater_than: Float
+  greater_than_equal: Float
+  less_than: Float
+  less_than_equal: Float
+  not_equals: Float
+}
+
+input Page_Image_sizes__face__mimeType_operator {
+  all: [String]
+  contains: String
+  equals: String
+  exists: Boolean
+  in: [String]
+  like: String
+  not_equals: String
+  not_in: [String]
+}
+
+input Page_Image_sizes__face__url_operator {
+  all: [String]
+  contains: String
+  equals: String
+  exists: Boolean
+  in: [String]
+  like: String
+  not_equals: String
+  not_in: [String]
+}
+
+input Page_Image_sizes__face__width_operator {
+  equals: Float
+  exists: Boolean
+  greater_than: Float
+  greater_than_equal: Float
+  less_than: Float
+  less_than_equal: Float
+  not_equals: Float
+}
+
 input Page_Image_title_operator {
   all: [String]
   contains: String
@@ -2221,6 +3022,12 @@ input Page_Image_where {
   height: Page_Image_height_operator
   id: Page_Image_id_operator
   mimeType: Page_Image_mimeType_operator
+  sizes__face__filename: Page_Image_sizes__face__filename_operator
+  sizes__face__filesize: Page_Image_sizes__face__filesize_operator
+  sizes__face__height: Page_Image_sizes__face__height_operator
+  sizes__face__mimeType: Page_Image_sizes__face__mimeType_operator
+  sizes__face__url: Page_Image_sizes__face__url_operator
+  sizes__face__width: Page_Image_sizes__face__width_operator
   title: Page_Image_title_operator
   updatedAt: Page_Image_updatedAt_operator
   url: Page_Image_url_operator
@@ -2237,6 +3044,12 @@ input Page_Image_where_and {
   height: Page_Image_height_operator
   id: Page_Image_id_operator
   mimeType: Page_Image_mimeType_operator
+  sizes__face__filename: Page_Image_sizes__face__filename_operator
+  sizes__face__filesize: Page_Image_sizes__face__filesize_operator
+  sizes__face__height: Page_Image_sizes__face__height_operator
+  sizes__face__mimeType: Page_Image_sizes__face__mimeType_operator
+  sizes__face__url: Page_Image_sizes__face__url_operator
+  sizes__face__width: Page_Image_sizes__face__width_operator
   title: Page_Image_title_operator
   updatedAt: Page_Image_updatedAt_operator
   url: Page_Image_url_operator
@@ -2253,6 +3066,12 @@ input Page_Image_where_or {
   height: Page_Image_height_operator
   id: Page_Image_id_operator
   mimeType: Page_Image_mimeType_operator
+  sizes__face__filename: Page_Image_sizes__face__filename_operator
+  sizes__face__filesize: Page_Image_sizes__face__filesize_operator
+  sizes__face__height: Page_Image_sizes__face__height_operator
+  sizes__face__mimeType: Page_Image_sizes__face__mimeType_operator
+  sizes__face__url: Page_Image_sizes__face__url_operator
+  sizes__face__width: Page_Image_sizes__face__width_operator
   title: Page_Image_title_operator
   updatedAt: Page_Image_updatedAt_operator
   url: Page_Image_url_operator
@@ -2325,6 +3144,7 @@ input Page_id_operator {
 
 input Page_image_operator {
   equals: String
+  exists: Boolean
   not_equals: String
 }
 
@@ -4265,6 +5085,7 @@ input mutationMediaInput {
   filesize: Float
   height: Float
   mimeType: String
+  sizes: mutationMedia_SizesInput
   title: String
   updatedAt: String
   url: String
@@ -4278,8 +5099,35 @@ input mutationMediaUpdateInput {
   filesize: Float
   height: Float
   mimeType: String
+  sizes: mutationMediaUpdate_SizesInput
   title: String
   updatedAt: String
+  url: String
+  width: Float
+}
+
+input mutationMediaUpdate_SizesInput {
+  face: mutationMediaUpdate_Sizes_FaceInput
+}
+
+input mutationMediaUpdate_Sizes_FaceInput {
+  filename: String
+  filesize: Float
+  height: Float
+  mimeType: String
+  url: String
+  width: Float
+}
+
+input mutationMedia_SizesInput {
+  face: mutationMedia_Sizes_FaceInput
+}
+
+input mutationMedia_Sizes_FaceInput {
+  filename: String
+  filesize: Float
+  height: Float
+  mimeType: String
   url: String
   width: Float
 }
@@ -4288,7 +5136,7 @@ input mutationPageInput {
   _status: Page__status_MutationInput
   content: JSON
   createdAt: String
-  image: String!
+  image: String
   slug: String
   title: String
   updatedAt: String
@@ -4874,6 +5722,7 @@ input versionsPage_version__createdAt_operator {
 
 input versionsPage_version__image_operator {
   equals: String
+  exists: Boolean
   not_equals: String
 }
 

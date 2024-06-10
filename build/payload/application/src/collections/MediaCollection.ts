@@ -17,7 +17,14 @@ const MediaCollection: CollectionConfig = {
   },
   upload: {
     staticURL: '/uploads/media',
-    staticDir: '../uploads/media'
+    staticDir: '../uploads/media',
+    imageSizes: [
+      {
+        name: 'face',
+        width: 640,
+        height: 640
+      }
+    ]
   }
 }
 

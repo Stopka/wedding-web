@@ -10,7 +10,7 @@ export default function ContactsBlock ({ fields }: {
       {fields.items.map(item => {
         return <div className={'col p-0'}>
           <div key={item.id} className="card text-center m-1">
-            <MediaImage media={item.image} className={'card-img-top'}/>
+            <MediaImage media={item.image} sizeName={'face'} className={'card-img-top'}/>
             <div className="card-body">
               <h5 className="card-title">{item.name}</h5>
               <p className="card-text">{item.role}</p>

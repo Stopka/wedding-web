@@ -1,7 +1,13 @@
 fragment Image on Media {
-    id
-    title
-    url
-    alt
-    mimeType
+  id
+  title
+  url
+  alt
+  mimeType
+  sizes {
+    face {
+      url
+      mimeType
+    }
+  }
 }

@@ -557,6 +557,69 @@ export type HomePageVersion_Version_Image_MimeType_Operator = {
   not_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
 };
 
+export type HomePageVersion_Version_Image_Sizes__Face__Filename_Operator = {
+  all?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  contains?: InputMaybe<Scalars['String']['input']>;
+  equals?: InputMaybe<Scalars['String']['input']>;
+  exists?: InputMaybe<Scalars['Boolean']['input']>;
+  in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  like?: InputMaybe<Scalars['String']['input']>;
+  not_equals?: InputMaybe<Scalars['String']['input']>;
+  not_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+};
+
+export type HomePageVersion_Version_Image_Sizes__Face__Filesize_Operator = {
+  equals?: InputMaybe<Scalars['Float']['input']>;
+  exists?: InputMaybe<Scalars['Boolean']['input']>;
+  greater_than?: InputMaybe<Scalars['Float']['input']>;
+  greater_than_equal?: InputMaybe<Scalars['Float']['input']>;
+  less_than?: InputMaybe<Scalars['Float']['input']>;
+  less_than_equal?: InputMaybe<Scalars['Float']['input']>;
+  not_equals?: InputMaybe<Scalars['Float']['input']>;
+};
+
+export type HomePageVersion_Version_Image_Sizes__Face__Height_Operator = {
+  equals?: InputMaybe<Scalars['Float']['input']>;
+  exists?: InputMaybe<Scalars['Boolean']['input']>;
+  greater_than?: InputMaybe<Scalars['Float']['input']>;
+  greater_than_equal?: InputMaybe<Scalars['Float']['input']>;
+  less_than?: InputMaybe<Scalars['Float']['input']>;
+  less_than_equal?: InputMaybe<Scalars['Float']['input']>;
+  not_equals?: InputMaybe<Scalars['Float']['input']>;
+};
+
+export type HomePageVersion_Version_Image_Sizes__Face__MimeType_Operator = {
+  all?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  contains?: InputMaybe<Scalars['String']['input']>;
+  equals?: InputMaybe<Scalars['String']['input']>;
+  exists?: InputMaybe<Scalars['Boolean']['input']>;
+  in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  like?: InputMaybe<Scalars['String']['input']>;
+  not_equals?: InputMaybe<Scalars['String']['input']>;
+  not_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+};
+
+export type HomePageVersion_Version_Image_Sizes__Face__Url_Operator = {
+  all?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  contains?: InputMaybe<Scalars['String']['input']>;
+  equals?: InputMaybe<Scalars['String']['input']>;
+  exists?: InputMaybe<Scalars['Boolean']['input']>;
+  in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  like?: InputMaybe<Scalars['String']['input']>;
+  not_equals?: InputMaybe<Scalars['String']['input']>;
+  not_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+};
+
+export type HomePageVersion_Version_Image_Sizes__Face__Width_Operator = {
+  equals?: InputMaybe<Scalars['Float']['input']>;
+  exists?: InputMaybe<Scalars['Boolean']['input']>;
+  greater_than?: InputMaybe<Scalars['Float']['input']>;
+  greater_than_equal?: InputMaybe<Scalars['Float']['input']>;
+  less_than?: InputMaybe<Scalars['Float']['input']>;
+  less_than_equal?: InputMaybe<Scalars['Float']['input']>;
+  not_equals?: InputMaybe<Scalars['Float']['input']>;
+};
+
 export type HomePageVersion_Version_Image_Title_Operator = {
   all?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   contains?: InputMaybe<Scalars['String']['input']>;
@@ -599,6 +662,12 @@ export type HomePageVersion_Version_Image_Where = {
   height?: InputMaybe<HomePageVersion_Version_Image_Height_Operator>;
   id?: InputMaybe<HomePageVersion_Version_Image_Id_Operator>;
   mimeType?: InputMaybe<HomePageVersion_Version_Image_MimeType_Operator>;
+  sizes__face__filename?: InputMaybe<HomePageVersion_Version_Image_Sizes__Face__Filename_Operator>;
+  sizes__face__filesize?: InputMaybe<HomePageVersion_Version_Image_Sizes__Face__Filesize_Operator>;
+  sizes__face__height?: InputMaybe<HomePageVersion_Version_Image_Sizes__Face__Height_Operator>;
+  sizes__face__mimeType?: InputMaybe<HomePageVersion_Version_Image_Sizes__Face__MimeType_Operator>;
+  sizes__face__url?: InputMaybe<HomePageVersion_Version_Image_Sizes__Face__Url_Operator>;
+  sizes__face__width?: InputMaybe<HomePageVersion_Version_Image_Sizes__Face__Width_Operator>;
   title?: InputMaybe<HomePageVersion_Version_Image_Title_Operator>;
   updatedAt?: InputMaybe<HomePageVersion_Version_Image_UpdatedAt_Operator>;
   url?: InputMaybe<HomePageVersion_Version_Image_Url_Operator>;
@@ -615,6 +684,12 @@ export type HomePageVersion_Version_Image_Where_And = {
   height?: InputMaybe<HomePageVersion_Version_Image_Height_Operator>;
   id?: InputMaybe<HomePageVersion_Version_Image_Id_Operator>;
   mimeType?: InputMaybe<HomePageVersion_Version_Image_MimeType_Operator>;
+  sizes__face__filename?: InputMaybe<HomePageVersion_Version_Image_Sizes__Face__Filename_Operator>;
+  sizes__face__filesize?: InputMaybe<HomePageVersion_Version_Image_Sizes__Face__Filesize_Operator>;
+  sizes__face__height?: InputMaybe<HomePageVersion_Version_Image_Sizes__Face__Height_Operator>;
+  sizes__face__mimeType?: InputMaybe<HomePageVersion_Version_Image_Sizes__Face__MimeType_Operator>;
+  sizes__face__url?: InputMaybe<HomePageVersion_Version_Image_Sizes__Face__Url_Operator>;
+  sizes__face__width?: InputMaybe<HomePageVersion_Version_Image_Sizes__Face__Width_Operator>;
   title?: InputMaybe<HomePageVersion_Version_Image_Title_Operator>;
   updatedAt?: InputMaybe<HomePageVersion_Version_Image_UpdatedAt_Operator>;
   url?: InputMaybe<HomePageVersion_Version_Image_Url_Operator>;
@@ -631,6 +706,12 @@ export type HomePageVersion_Version_Image_Where_Or = {
   height?: InputMaybe<HomePageVersion_Version_Image_Height_Operator>;
   id?: InputMaybe<HomePageVersion_Version_Image_Id_Operator>;
   mimeType?: InputMaybe<HomePageVersion_Version_Image_MimeType_Operator>;
+  sizes__face__filename?: InputMaybe<HomePageVersion_Version_Image_Sizes__Face__Filename_Operator>;
+  sizes__face__filesize?: InputMaybe<HomePageVersion_Version_Image_Sizes__Face__Filesize_Operator>;
+  sizes__face__height?: InputMaybe<HomePageVersion_Version_Image_Sizes__Face__Height_Operator>;
+  sizes__face__mimeType?: InputMaybe<HomePageVersion_Version_Image_Sizes__Face__MimeType_Operator>;
+  sizes__face__url?: InputMaybe<HomePageVersion_Version_Image_Sizes__Face__Url_Operator>;
+  sizes__face__width?: InputMaybe<HomePageVersion_Version_Image_Sizes__Face__Width_Operator>;
   title?: InputMaybe<HomePageVersion_Version_Image_Title_Operator>;
   updatedAt?: InputMaybe<HomePageVersion_Version_Image_UpdatedAt_Operator>;
   url?: InputMaybe<HomePageVersion_Version_Image_Url_Operator>;
@@ -727,6 +808,69 @@ export type HomePage_Image_MimeType_Operator = {
   not_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
 };
 
+export type HomePage_Image_Sizes__Face__Filename_Operator = {
+  all?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  contains?: InputMaybe<Scalars['String']['input']>;
+  equals?: InputMaybe<Scalars['String']['input']>;
+  exists?: InputMaybe<Scalars['Boolean']['input']>;
+  in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  like?: InputMaybe<Scalars['String']['input']>;
+  not_equals?: InputMaybe<Scalars['String']['input']>;
+  not_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+};
+
+export type HomePage_Image_Sizes__Face__Filesize_Operator = {
+  equals?: InputMaybe<Scalars['Float']['input']>;
+  exists?: InputMaybe<Scalars['Boolean']['input']>;
+  greater_than?: InputMaybe<Scalars['Float']['input']>;
+  greater_than_equal?: InputMaybe<Scalars['Float']['input']>;
+  less_than?: InputMaybe<Scalars['Float']['input']>;
+  less_than_equal?: InputMaybe<Scalars['Float']['input']>;
+  not_equals?: InputMaybe<Scalars['Float']['input']>;
+};
+
+export type HomePage_Image_Sizes__Face__Height_Operator = {
+  equals?: InputMaybe<Scalars['Float']['input']>;
+  exists?: InputMaybe<Scalars['Boolean']['input']>;
+  greater_than?: InputMaybe<Scalars['Float']['input']>;
+  greater_than_equal?: InputMaybe<Scalars['Float']['input']>;
+  less_than?: InputMaybe<Scalars['Float']['input']>;
+  less_than_equal?: InputMaybe<Scalars['Float']['input']>;
+  not_equals?: InputMaybe<Scalars['Float']['input']>;
+};
+
+export type HomePage_Image_Sizes__Face__MimeType_Operator = {
+  all?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  contains?: InputMaybe<Scalars['String']['input']>;
+  equals?: InputMaybe<Scalars['String']['input']>;
+  exists?: InputMaybe<Scalars['Boolean']['input']>;
+  in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  like?: InputMaybe<Scalars['String']['input']>;
+  not_equals?: InputMaybe<Scalars['String']['input']>;
+  not_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+};
+
+export type HomePage_Image_Sizes__Face__Url_Operator = {
+  all?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  contains?: InputMaybe<Scalars['String']['input']>;
+  equals?: InputMaybe<Scalars['String']['input']>;
+  exists?: InputMaybe<Scalars['Boolean']['input']>;
+  in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  like?: InputMaybe<Scalars['String']['input']>;
+  not_equals?: InputMaybe<Scalars['String']['input']>;
+  not_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+};
+
+export type HomePage_Image_Sizes__Face__Width_Operator = {
+  equals?: InputMaybe<Scalars['Float']['input']>;
+  exists?: InputMaybe<Scalars['Boolean']['input']>;
+  greater_than?: InputMaybe<Scalars['Float']['input']>;
+  greater_than_equal?: InputMaybe<Scalars['Float']['input']>;
+  less_than?: InputMaybe<Scalars['Float']['input']>;
+  less_than_equal?: InputMaybe<Scalars['Float']['input']>;
+  not_equals?: InputMaybe<Scalars['Float']['input']>;
+};
+
 export type HomePage_Image_Title_Operator = {
   all?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   contains?: InputMaybe<Scalars['String']['input']>;
@@ -769,6 +913,12 @@ export type HomePage_Image_Where = {
   height?: InputMaybe<HomePage_Image_Height_Operator>;
   id?: InputMaybe<HomePage_Image_Id_Operator>;
   mimeType?: InputMaybe<HomePage_Image_MimeType_Operator>;
+  sizes__face__filename?: InputMaybe<HomePage_Image_Sizes__Face__Filename_Operator>;
+  sizes__face__filesize?: InputMaybe<HomePage_Image_Sizes__Face__Filesize_Operator>;
+  sizes__face__height?: InputMaybe<HomePage_Image_Sizes__Face__Height_Operator>;
+  sizes__face__mimeType?: InputMaybe<HomePage_Image_Sizes__Face__MimeType_Operator>;
+  sizes__face__url?: InputMaybe<HomePage_Image_Sizes__Face__Url_Operator>;
+  sizes__face__width?: InputMaybe<HomePage_Image_Sizes__Face__Width_Operator>;
   title?: InputMaybe<HomePage_Image_Title_Operator>;
   updatedAt?: InputMaybe<HomePage_Image_UpdatedAt_Operator>;
   url?: InputMaybe<HomePage_Image_Url_Operator>;
@@ -785,6 +935,12 @@ export type HomePage_Image_Where_And = {
   height?: InputMaybe<HomePage_Image_Height_Operator>;
   id?: InputMaybe<HomePage_Image_Id_Operator>;
   mimeType?: InputMaybe<HomePage_Image_MimeType_Operator>;
+  sizes__face__filename?: InputMaybe<HomePage_Image_Sizes__Face__Filename_Operator>;
+  sizes__face__filesize?: InputMaybe<HomePage_Image_Sizes__Face__Filesize_Operator>;
+  sizes__face__height?: InputMaybe<HomePage_Image_Sizes__Face__Height_Operator>;
+  sizes__face__mimeType?: InputMaybe<HomePage_Image_Sizes__Face__MimeType_Operator>;
+  sizes__face__url?: InputMaybe<HomePage_Image_Sizes__Face__Url_Operator>;
+  sizes__face__width?: InputMaybe<HomePage_Image_Sizes__Face__Width_Operator>;
   title?: InputMaybe<HomePage_Image_Title_Operator>;
   updatedAt?: InputMaybe<HomePage_Image_UpdatedAt_Operator>;
   url?: InputMaybe<HomePage_Image_Url_Operator>;
@@ -801,6 +957,12 @@ export type HomePage_Image_Where_Or = {
   height?: InputMaybe<HomePage_Image_Height_Operator>;
   id?: InputMaybe<HomePage_Image_Id_Operator>;
   mimeType?: InputMaybe<HomePage_Image_MimeType_Operator>;
+  sizes__face__filename?: InputMaybe<HomePage_Image_Sizes__Face__Filename_Operator>;
+  sizes__face__filesize?: InputMaybe<HomePage_Image_Sizes__Face__Filesize_Operator>;
+  sizes__face__height?: InputMaybe<HomePage_Image_Sizes__Face__Height_Operator>;
+  sizes__face__mimeType?: InputMaybe<HomePage_Image_Sizes__Face__MimeType_Operator>;
+  sizes__face__url?: InputMaybe<HomePage_Image_Sizes__Face__Url_Operator>;
+  sizes__face__width?: InputMaybe<HomePage_Image_Sizes__Face__Width_Operator>;
   title?: InputMaybe<HomePage_Image_Title_Operator>;
   updatedAt?: InputMaybe<HomePage_Image_UpdatedAt_Operator>;
   url?: InputMaybe<HomePage_Image_Url_Operator>;
@@ -1355,6 +1517,7 @@ export type Media = {
   height?: Maybe<Scalars['Float']['output']>;
   id?: Maybe<Scalars['String']['output']>;
   mimeType?: Maybe<Scalars['String']['output']>;
+  sizes?: Maybe<Media_Sizes>;
   title?: Maybe<Scalars['String']['output']>;
   updatedAt?: Maybe<Scalars['DateTime']['output']>;
   url?: Maybe<Scalars['String']['output']>;
@@ -1393,6 +1556,7 @@ export type MediaDocAccessFields = {
   filesize?: Maybe<MediaDocAccessFields_Filesize>;
   height?: Maybe<MediaDocAccessFields_Height>;
   mimeType?: Maybe<MediaDocAccessFields_MimeType>;
+  sizes?: Maybe<MediaDocAccessFields_Sizes>;
   title?: Maybe<MediaDocAccessFields_Title>;
   updatedAt?: Maybe<MediaDocAccessFields_UpdatedAt>;
   url?: Maybe<MediaDocAccessFields_Url>;
@@ -1567,6 +1731,247 @@ export type MediaDocAccessFields_MimeType_Update = {
   permission: Scalars['Boolean']['output'];
 };
 
+export type MediaDocAccessFields_Sizes = {
+  __typename?: 'MediaDocAccessFields_sizes';
+  create?: Maybe<MediaDocAccessFields_Sizes_Create>;
+  delete?: Maybe<MediaDocAccessFields_Sizes_Delete>;
+  fields?: Maybe<MediaDocAccessFields_Sizes_Fields>;
+  read?: Maybe<MediaDocAccessFields_Sizes_Read>;
+  update?: Maybe<MediaDocAccessFields_Sizes_Update>;
+};
+
+export type MediaDocAccessFields_Sizes_Create = {
+  __typename?: 'MediaDocAccessFields_sizes_Create';
+  permission: Scalars['Boolean']['output'];
+};
+
+export type MediaDocAccessFields_Sizes_Delete = {
+  __typename?: 'MediaDocAccessFields_sizes_Delete';
+  permission: Scalars['Boolean']['output'];
+};
+
+export type MediaDocAccessFields_Sizes_Fields = {
+  __typename?: 'MediaDocAccessFields_sizes_Fields';
+  face?: Maybe<MediaDocAccessFields_Sizes_Face>;
+};
+
+export type MediaDocAccessFields_Sizes_Read = {
+  __typename?: 'MediaDocAccessFields_sizes_Read';
+  permission: Scalars['Boolean']['output'];
+};
+
+export type MediaDocAccessFields_Sizes_Update = {
+  __typename?: 'MediaDocAccessFields_sizes_Update';
+  permission: Scalars['Boolean']['output'];
+};
+
+export type MediaDocAccessFields_Sizes_Face = {
+  __typename?: 'MediaDocAccessFields_sizes_face';
+  create?: Maybe<MediaDocAccessFields_Sizes_Face_Create>;
+  delete?: Maybe<MediaDocAccessFields_Sizes_Face_Delete>;
+  fields?: Maybe<MediaDocAccessFields_Sizes_Face_Fields>;
+  read?: Maybe<MediaDocAccessFields_Sizes_Face_Read>;
+  update?: Maybe<MediaDocAccessFields_Sizes_Face_Update>;
+};
+
+export type MediaDocAccessFields_Sizes_Face_Create = {
+  __typename?: 'MediaDocAccessFields_sizes_face_Create';
+  permission: Scalars['Boolean']['output'];
+};
+
+export type MediaDocAccessFields_Sizes_Face_Delete = {
+  __typename?: 'MediaDocAccessFields_sizes_face_Delete';
+  permission: Scalars['Boolean']['output'];
+};
+
+export type MediaDocAccessFields_Sizes_Face_Fields = {
+  __typename?: 'MediaDocAccessFields_sizes_face_Fields';
+  filename?: Maybe<MediaDocAccessFields_Sizes_Face_Filename>;
+  filesize?: Maybe<MediaDocAccessFields_Sizes_Face_Filesize>;
+  height?: Maybe<MediaDocAccessFields_Sizes_Face_Height>;
+  mimeType?: Maybe<MediaDocAccessFields_Sizes_Face_MimeType>;
+  url?: Maybe<MediaDocAccessFields_Sizes_Face_Url>;
+  width?: Maybe<MediaDocAccessFields_Sizes_Face_Width>;
+};
+
+export type MediaDocAccessFields_Sizes_Face_Read = {
+  __typename?: 'MediaDocAccessFields_sizes_face_Read';
+  permission: Scalars['Boolean']['output'];
+};
+
+export type MediaDocAccessFields_Sizes_Face_Update = {
+  __typename?: 'MediaDocAccessFields_sizes_face_Update';
+  permission: Scalars['Boolean']['output'];
+};
+
+export type MediaDocAccessFields_Sizes_Face_Filename = {
+  __typename?: 'MediaDocAccessFields_sizes_face_filename';
+  create?: Maybe<MediaDocAccessFields_Sizes_Face_Filename_Create>;
+  delete?: Maybe<MediaDocAccessFields_Sizes_Face_Filename_Delete>;
+  read?: Maybe<MediaDocAccessFields_Sizes_Face_Filename_Read>;
+  update?: Maybe<MediaDocAccessFields_Sizes_Face_Filename_Update>;
+};
+
+export type MediaDocAccessFields_Sizes_Face_Filename_Create = {
+  __typename?: 'MediaDocAccessFields_sizes_face_filename_Create';
+  permission: Scalars['Boolean']['output'];
+};
+
+export type MediaDocAccessFields_Sizes_Face_Filename_Delete = {
+  __typename?: 'MediaDocAccessFields_sizes_face_filename_Delete';
+  permission: Scalars['Boolean']['output'];
+};
+
+export type MediaDocAccessFields_Sizes_Face_Filename_Read = {
+  __typename?: 'MediaDocAccessFields_sizes_face_filename_Read';
+  permission: Scalars['Boolean']['output'];
+};
+
+export type MediaDocAccessFields_Sizes_Face_Filename_Update = {
+  __typename?: 'MediaDocAccessFields_sizes_face_filename_Update';
+  permission: Scalars['Boolean']['output'];
+};
+
+export type MediaDocAccessFields_Sizes_Face_Filesize = {
+  __typename?: 'MediaDocAccessFields_sizes_face_filesize';
+  create?: Maybe<MediaDocAccessFields_Sizes_Face_Filesize_Create>;
+  delete?: Maybe<MediaDocAccessFields_Sizes_Face_Filesize_Delete>;
+  read?: Maybe<MediaDocAccessFields_Sizes_Face_Filesize_Read>;
+  update?: Maybe<MediaDocAccessFields_Sizes_Face_Filesize_Update>;
+};
+
+export type MediaDocAccessFields_Sizes_Face_Filesize_Create = {
+  __typename?: 'MediaDocAccessFields_sizes_face_filesize_Create';
+  permission: Scalars['Boolean']['output'];
+};
+
+export type MediaDocAccessFields_Sizes_Face_Filesize_Delete = {
+  __typename?: 'MediaDocAccessFields_sizes_face_filesize_Delete';
+  permission: Scalars['Boolean']['output'];
+};
+
+export type MediaDocAccessFields_Sizes_Face_Filesize_Read = {
+  __typename?: 'MediaDocAccessFields_sizes_face_filesize_Read';
+  permission: Scalars['Boolean']['output'];
+};
+
+export type MediaDocAccessFields_Sizes_Face_Filesize_Update = {
+  __typename?: 'MediaDocAccessFields_sizes_face_filesize_Update';
+  permission: Scalars['Boolean']['output'];
+};
+
+export type MediaDocAccessFields_Sizes_Face_Height = {
+  __typename?: 'MediaDocAccessFields_sizes_face_height';
+  create?: Maybe<MediaDocAccessFields_Sizes_Face_Height_Create>;
+  delete?: Maybe<MediaDocAccessFields_Sizes_Face_Height_Delete>;
+  read?: Maybe<MediaDocAccessFields_Sizes_Face_Height_Read>;
+  update?: Maybe<MediaDocAccessFields_Sizes_Face_Height_Update>;
+};
+
+export type MediaDocAccessFields_Sizes_Face_Height_Create = {
+  __typename?: 'MediaDocAccessFields_sizes_face_height_Create';
+  permission: Scalars['Boolean']['output'];
+};
+
+export type MediaDocAccessFields_Sizes_Face_Height_Delete = {
+  __typename?: 'MediaDocAccessFields_sizes_face_height_Delete';
+  permission: Scalars['Boolean']['output'];
+};
+
+export type MediaDocAccessFields_Sizes_Face_Height_Read = {
+  __typename?: 'MediaDocAccessFields_sizes_face_height_Read';
+  permission: Scalars['Boolean']['output'];
+};
+
+export type MediaDocAccessFields_Sizes_Face_Height_Update = {
+  __typename?: 'MediaDocAccessFields_sizes_face_height_Update';
+  permission: Scalars['Boolean']['output'];
+};
+
+export type MediaDocAccessFields_Sizes_Face_MimeType = {
+  __typename?: 'MediaDocAccessFields_sizes_face_mimeType';
+  create?: Maybe<MediaDocAccessFields_Sizes_Face_MimeType_Create>;
+  delete?: Maybe<MediaDocAccessFields_Sizes_Face_MimeType_Delete>;
+  read?: Maybe<MediaDocAccessFields_Sizes_Face_MimeType_Read>;
+  update?: Maybe<MediaDocAccessFields_Sizes_Face_MimeType_Update>;
+};
+
+export type MediaDocAccessFields_Sizes_Face_MimeType_Create = {
+  __typename?: 'MediaDocAccessFields_sizes_face_mimeType_Create';
+  permission: Scalars['Boolean']['output'];
+};
+
+export type MediaDocAccessFields_Sizes_Face_MimeType_Delete = {
+  __typename?: 'MediaDocAccessFields_sizes_face_mimeType_Delete';
+  permission: Scalars['Boolean']['output'];
+};
+
+export type MediaDocAccessFields_Sizes_Face_MimeType_Read = {
+  __typename?: 'MediaDocAccessFields_sizes_face_mimeType_Read';
+  permission: Scalars['Boolean']['output'];
+};
+
+export type MediaDocAccessFields_Sizes_Face_MimeType_Update = {
+  __typename?: 'MediaDocAccessFields_sizes_face_mimeType_Update';
+  permission: Scalars['Boolean']['output'];
+};
+
+export type MediaDocAccessFields_Sizes_Face_Url = {
+  __typename?: 'MediaDocAccessFields_sizes_face_url';
+  create?: Maybe<MediaDocAccessFields_Sizes_Face_Url_Create>;
+  delete?: Maybe<MediaDocAccessFields_Sizes_Face_Url_Delete>;
+  read?: Maybe<MediaDocAccessFields_Sizes_Face_Url_Read>;
+  update?: Maybe<MediaDocAccessFields_Sizes_Face_Url_Update>;
+};
+
+export type MediaDocAccessFields_Sizes_Face_Url_Create = {
+  __typename?: 'MediaDocAccessFields_sizes_face_url_Create';
+  permission: Scalars['Boolean']['output'];
+};
+
+export type MediaDocAccessFields_Sizes_Face_Url_Delete = {
+  __typename?: 'MediaDocAccessFields_sizes_face_url_Delete';
+  permission: Scalars['Boolean']['output'];
+};
+
+export type MediaDocAccessFields_Sizes_Face_Url_Read = {
+  __typename?: 'MediaDocAccessFields_sizes_face_url_Read';
+  permission: Scalars['Boolean']['output'];
+};
+
+export type MediaDocAccessFields_Sizes_Face_Url_Update = {
+  __typename?: 'MediaDocAccessFields_sizes_face_url_Update';
+  permission: Scalars['Boolean']['output'];
+};
+
+export type MediaDocAccessFields_Sizes_Face_Width = {
+  __typename?: 'MediaDocAccessFields_sizes_face_width';
+  create?: Maybe<MediaDocAccessFields_Sizes_Face_Width_Create>;
+  delete?: Maybe<MediaDocAccessFields_Sizes_Face_Width_Delete>;
+  read?: Maybe<MediaDocAccessFields_Sizes_Face_Width_Read>;
+  update?: Maybe<MediaDocAccessFields_Sizes_Face_Width_Update>;
+};
+
+export type MediaDocAccessFields_Sizes_Face_Width_Create = {
+  __typename?: 'MediaDocAccessFields_sizes_face_width_Create';
+  permission: Scalars['Boolean']['output'];
+};
+
+export type MediaDocAccessFields_Sizes_Face_Width_Delete = {
+  __typename?: 'MediaDocAccessFields_sizes_face_width_Delete';
+  permission: Scalars['Boolean']['output'];
+};
+
+export type MediaDocAccessFields_Sizes_Face_Width_Read = {
+  __typename?: 'MediaDocAccessFields_sizes_face_width_Read';
+  permission: Scalars['Boolean']['output'];
+};
+
+export type MediaDocAccessFields_Sizes_Face_Width_Update = {
+  __typename?: 'MediaDocAccessFields_sizes_face_width_Update';
+  permission: Scalars['Boolean']['output'];
+};
+
 export type MediaDocAccessFields_Title = {
   __typename?: 'MediaDocAccessFields_title';
   create?: Maybe<MediaDocAccessFields_Title_Create>;
@@ -1687,6 +2092,7 @@ export type MediaFields = {
   filesize?: Maybe<MediaFields_Filesize>;
   height?: Maybe<MediaFields_Height>;
   mimeType?: Maybe<MediaFields_MimeType>;
+  sizes?: Maybe<MediaFields_Sizes>;
   title?: Maybe<MediaFields_Title>;
   updatedAt?: Maybe<MediaFields_UpdatedAt>;
   url?: Maybe<MediaFields_Url>;
@@ -1861,6 +2267,247 @@ export type MediaFields_MimeType_Update = {
   permission: Scalars['Boolean']['output'];
 };
 
+export type MediaFields_Sizes = {
+  __typename?: 'MediaFields_sizes';
+  create?: Maybe<MediaFields_Sizes_Create>;
+  delete?: Maybe<MediaFields_Sizes_Delete>;
+  fields?: Maybe<MediaFields_Sizes_Fields>;
+  read?: Maybe<MediaFields_Sizes_Read>;
+  update?: Maybe<MediaFields_Sizes_Update>;
+};
+
+export type MediaFields_Sizes_Create = {
+  __typename?: 'MediaFields_sizes_Create';
+  permission: Scalars['Boolean']['output'];
+};
+
+export type MediaFields_Sizes_Delete = {
+  __typename?: 'MediaFields_sizes_Delete';
+  permission: Scalars['Boolean']['output'];
+};
+
+export type MediaFields_Sizes_Fields = {
+  __typename?: 'MediaFields_sizes_Fields';
+  face?: Maybe<MediaFields_Sizes_Face>;
+};
+
+export type MediaFields_Sizes_Read = {
+  __typename?: 'MediaFields_sizes_Read';
+  permission: Scalars['Boolean']['output'];
+};
+
+export type MediaFields_Sizes_Update = {
+  __typename?: 'MediaFields_sizes_Update';
+  permission: Scalars['Boolean']['output'];
+};
+
+export type MediaFields_Sizes_Face = {
+  __typename?: 'MediaFields_sizes_face';
+  create?: Maybe<MediaFields_Sizes_Face_Create>;
+  delete?: Maybe<MediaFields_Sizes_Face_Delete>;
+  fields?: Maybe<MediaFields_Sizes_Face_Fields>;
+  read?: Maybe<MediaFields_Sizes_Face_Read>;
+  update?: Maybe<MediaFields_Sizes_Face_Update>;
+};
+
+export type MediaFields_Sizes_Face_Create = {
+  __typename?: 'MediaFields_sizes_face_Create';
+  permission: Scalars['Boolean']['output'];
+};
+
+export type MediaFields_Sizes_Face_Delete = {
+  __typename?: 'MediaFields_sizes_face_Delete';
+  permission: Scalars['Boolean']['output'];
+};
+
+export type MediaFields_Sizes_Face_Fields = {
+  __typename?: 'MediaFields_sizes_face_Fields';
+  filename?: Maybe<MediaFields_Sizes_Face_Filename>;
+  filesize?: Maybe<MediaFields_Sizes_Face_Filesize>;
+  height?: Maybe<MediaFields_Sizes_Face_Height>;
+  mimeType?: Maybe<MediaFields_Sizes_Face_MimeType>;
+  url?: Maybe<MediaFields_Sizes_Face_Url>;
+  width?: Maybe<MediaFields_Sizes_Face_Width>;
+};
+
+export type MediaFields_Sizes_Face_Read = {
+  __typename?: 'MediaFields_sizes_face_Read';
+  permission: Scalars['Boolean']['output'];
+};
+
+export type MediaFields_Sizes_Face_Update = {
+  __typename?: 'MediaFields_sizes_face_Update';
+  permission: Scalars['Boolean']['output'];
+};
+
+export type MediaFields_Sizes_Face_Filename = {
+  __typename?: 'MediaFields_sizes_face_filename';
+  create?: Maybe<MediaFields_Sizes_Face_Filename_Create>;
+  delete?: Maybe<MediaFields_Sizes_Face_Filename_Delete>;
+  read?: Maybe<MediaFields_Sizes_Face_Filename_Read>;
+  update?: Maybe<MediaFields_Sizes_Face_Filename_Update>;
+};
+
+export type MediaFields_Sizes_Face_Filename_Create = {
+  __typename?: 'MediaFields_sizes_face_filename_Create';
+  permission: Scalars['Boolean']['output'];
+};
+
+export type MediaFields_Sizes_Face_Filename_Delete = {
+  __typename?: 'MediaFields_sizes_face_filename_Delete';
+  permission: Scalars['Boolean']['output'];
+};
+
+export type MediaFields_Sizes_Face_Filename_Read = {
+  __typename?: 'MediaFields_sizes_face_filename_Read';
+  permission: Scalars['Boolean']['output'];
+};
+
+export type MediaFields_Sizes_Face_Filename_Update = {
+  __typename?: 'MediaFields_sizes_face_filename_Update';
+  permission: Scalars['Boolean']['output'];
+};
+
+export type MediaFields_Sizes_Face_Filesize = {
+  __typename?: 'MediaFields_sizes_face_filesize';
+  create?: Maybe<MediaFields_Sizes_Face_Filesize_Create>;
+  delete?: Maybe<MediaFields_Sizes_Face_Filesize_Delete>;
+  read?: Maybe<MediaFields_Sizes_Face_Filesize_Read>;
+  update?: Maybe<MediaFields_Sizes_Face_Filesize_Update>;
+};
+
+export type MediaFields_Sizes_Face_Filesize_Create = {
+  __typename?: 'MediaFields_sizes_face_filesize_Create';
+  permission: Scalars['Boolean']['output'];
+};
+
+export type MediaFields_Sizes_Face_Filesize_Delete = {
+  __typename?: 'MediaFields_sizes_face_filesize_Delete';
+  permission: Scalars['Boolean']['output'];
+};
+
+export type MediaFields_Sizes_Face_Filesize_Read = {
+  __typename?: 'MediaFields_sizes_face_filesize_Read';
+  permission: Scalars['Boolean']['output'];
+};
+
+export type MediaFields_Sizes_Face_Filesize_Update = {
+  __typename?: 'MediaFields_sizes_face_filesize_Update';
+  permission: Scalars['Boolean']['output'];
+};
+
+export type MediaFields_Sizes_Face_Height = {
+  __typename?: 'MediaFields_sizes_face_height';
+  create?: Maybe<MediaFields_Sizes_Face_Height_Create>;
+  delete?: Maybe<MediaFields_Sizes_Face_Height_Delete>;
+  read?: Maybe<MediaFields_Sizes_Face_Height_Read>;
+  update?: Maybe<MediaFields_Sizes_Face_Height_Update>;
+};
+
+export type MediaFields_Sizes_Face_Height_Create = {
+  __typename?: 'MediaFields_sizes_face_height_Create';
+  permission: Scalars['Boolean']['output'];
+};
+
+export type MediaFields_Sizes_Face_Height_Delete = {
+  __typename?: 'MediaFields_sizes_face_height_Delete';
+  permission: Scalars['Boolean']['output'];
+};
+
+export type MediaFields_Sizes_Face_Height_Read = {
+  __typename?: 'MediaFields_sizes_face_height_Read';
+  permission: Scalars['Boolean']['output'];
+};
+
+export type MediaFields_Sizes_Face_Height_Update = {
+  __typename?: 'MediaFields_sizes_face_height_Update';
+  permission: Scalars['Boolean']['output'];
+};
+
+export type MediaFields_Sizes_Face_MimeType = {
+  __typename?: 'MediaFields_sizes_face_mimeType';
+  create?: Maybe<MediaFields_Sizes_Face_MimeType_Create>;
+  delete?: Maybe<MediaFields_Sizes_Face_MimeType_Delete>;
+  read?: Maybe<MediaFields_Sizes_Face_MimeType_Read>;
+  update?: Maybe<MediaFields_Sizes_Face_MimeType_Update>;
+};
+
+export type MediaFields_Sizes_Face_MimeType_Create = {
+  __typename?: 'MediaFields_sizes_face_mimeType_Create';
+  permission: Scalars['Boolean']['output'];
+};
+
+export type MediaFields_Sizes_Face_MimeType_Delete = {
+  __typename?: 'MediaFields_sizes_face_mimeType_Delete';
+  permission: Scalars['Boolean']['output'];
+};
+
+export type MediaFields_Sizes_Face_MimeType_Read = {
+  __typename?: 'MediaFields_sizes_face_mimeType_Read';
+  permission: Scalars['Boolean']['output'];
+};
+
+export type MediaFields_Sizes_Face_MimeType_Update = {
+  __typename?: 'MediaFields_sizes_face_mimeType_Update';
+  permission: Scalars['Boolean']['output'];
+};
+
+export type MediaFields_Sizes_Face_Url = {
+  __typename?: 'MediaFields_sizes_face_url';
+  create?: Maybe<MediaFields_Sizes_Face_Url_Create>;
+  delete?: Maybe<MediaFields_Sizes_Face_Url_Delete>;
+  read?: Maybe<MediaFields_Sizes_Face_Url_Read>;
+  update?: Maybe<MediaFields_Sizes_Face_Url_Update>;
+};
+
+export type MediaFields_Sizes_Face_Url_Create = {
+  __typename?: 'MediaFields_sizes_face_url_Create';
+  permission: Scalars['Boolean']['output'];
+};
+
+export type MediaFields_Sizes_Face_Url_Delete = {
+  __typename?: 'MediaFields_sizes_face_url_Delete';
+  permission: Scalars['Boolean']['output'];
+};
+
+export type MediaFields_Sizes_Face_Url_Read = {
+  __typename?: 'MediaFields_sizes_face_url_Read';
+  permission: Scalars['Boolean']['output'];
+};
+
+export type MediaFields_Sizes_Face_Url_Update = {
+  __typename?: 'MediaFields_sizes_face_url_Update';
+  permission: Scalars['Boolean']['output'];
+};
+
+export type MediaFields_Sizes_Face_Width = {
+  __typename?: 'MediaFields_sizes_face_width';
+  create?: Maybe<MediaFields_Sizes_Face_Width_Create>;
+  delete?: Maybe<MediaFields_Sizes_Face_Width_Delete>;
+  read?: Maybe<MediaFields_Sizes_Face_Width_Read>;
+  update?: Maybe<MediaFields_Sizes_Face_Width_Update>;
+};
+
+export type MediaFields_Sizes_Face_Width_Create = {
+  __typename?: 'MediaFields_sizes_face_width_Create';
+  permission: Scalars['Boolean']['output'];
+};
+
+export type MediaFields_Sizes_Face_Width_Delete = {
+  __typename?: 'MediaFields_sizes_face_width_Delete';
+  permission: Scalars['Boolean']['output'];
+};
+
+export type MediaFields_Sizes_Face_Width_Read = {
+  __typename?: 'MediaFields_sizes_face_width_Read';
+  permission: Scalars['Boolean']['output'];
+};
+
+export type MediaFields_Sizes_Face_Width_Update = {
+  __typename?: 'MediaFields_sizes_face_width_Update';
+  permission: Scalars['Boolean']['output'];
+};
+
 export type MediaFields_Title = {
   __typename?: 'MediaFields_title';
   create?: Maybe<MediaFields_Title_Create>;
@@ -1997,6 +2644,21 @@ export type MediaUpdateDocAccess = {
   where?: Maybe<Scalars['JSONObject']['output']>;
 };
 
+export type Media_Sizes = {
+  __typename?: 'Media_Sizes';
+  face?: Maybe<Media_Sizes_Face>;
+};
+
+export type Media_Sizes_Face = {
+  __typename?: 'Media_Sizes_Face';
+  filename?: Maybe<Scalars['String']['output']>;
+  filesize?: Maybe<Scalars['Float']['output']>;
+  height?: Maybe<Scalars['Float']['output']>;
+  mimeType?: Maybe<Scalars['String']['output']>;
+  url?: Maybe<Scalars['String']['output']>;
+  width?: Maybe<Scalars['Float']['output']>;
+};
+
 export type Media_Alt_Operator = {
   all?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   contains?: InputMaybe<Scalars['String']['input']>;
@@ -2072,6 +2734,69 @@ export type Media_MimeType_Operator = {
   not_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
 };
 
+export type Media_Sizes__Face__Filename_Operator = {
+  all?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  contains?: InputMaybe<Scalars['String']['input']>;
+  equals?: InputMaybe<Scalars['String']['input']>;
+  exists?: InputMaybe<Scalars['Boolean']['input']>;
+  in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  like?: InputMaybe<Scalars['String']['input']>;
+  not_equals?: InputMaybe<Scalars['String']['input']>;
+  not_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+};
+
+export type Media_Sizes__Face__Filesize_Operator = {
+  equals?: InputMaybe<Scalars['Float']['input']>;
+  exists?: InputMaybe<Scalars['Boolean']['input']>;
+  greater_than?: InputMaybe<Scalars['Float']['input']>;
+  greater_than_equal?: InputMaybe<Scalars['Float']['input']>;
+  less_than?: InputMaybe<Scalars['Float']['input']>;
+  less_than_equal?: InputMaybe<Scalars['Float']['input']>;
+  not_equals?: InputMaybe<Scalars['Float']['input']>;
+};
+
+export type Media_Sizes__Face__Height_Operator = {
+  equals?: InputMaybe<Scalars['Float']['input']>;
+  exists?: InputMaybe<Scalars['Boolean']['input']>;
+  greater_than?: InputMaybe<Scalars['Float']['input']>;
+  greater_than_equal?: InputMaybe<Scalars['Float']['input']>;
+  less_than?: InputMaybe<Scalars['Float']['input']>;
+  less_than_equal?: InputMaybe<Scalars['Float']['input']>;
+  not_equals?: InputMaybe<Scalars['Float']['input']>;
+};
+
+export type Media_Sizes__Face__MimeType_Operator = {
+  all?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  contains?: InputMaybe<Scalars['String']['input']>;
+  equals?: InputMaybe<Scalars['String']['input']>;
+  exists?: InputMaybe<Scalars['Boolean']['input']>;
+  in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  like?: InputMaybe<Scalars['String']['input']>;
+  not_equals?: InputMaybe<Scalars['String']['input']>;
+  not_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+};
+
+export type Media_Sizes__Face__Url_Operator = {
+  all?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  contains?: InputMaybe<Scalars['String']['input']>;
+  equals?: InputMaybe<Scalars['String']['input']>;
+  exists?: InputMaybe<Scalars['Boolean']['input']>;
+  in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  like?: InputMaybe<Scalars['String']['input']>;
+  not_equals?: InputMaybe<Scalars['String']['input']>;
+  not_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+};
+
+export type Media_Sizes__Face__Width_Operator = {
+  equals?: InputMaybe<Scalars['Float']['input']>;
+  exists?: InputMaybe<Scalars['Boolean']['input']>;
+  greater_than?: InputMaybe<Scalars['Float']['input']>;
+  greater_than_equal?: InputMaybe<Scalars['Float']['input']>;
+  less_than?: InputMaybe<Scalars['Float']['input']>;
+  less_than_equal?: InputMaybe<Scalars['Float']['input']>;
+  not_equals?: InputMaybe<Scalars['Float']['input']>;
+};
+
 export type Media_Title_Operator = {
   all?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   contains?: InputMaybe<Scalars['String']['input']>;
@@ -2114,6 +2839,12 @@ export type Media_Where = {
   height?: InputMaybe<Media_Height_Operator>;
   id?: InputMaybe<Media_Id_Operator>;
   mimeType?: InputMaybe<Media_MimeType_Operator>;
+  sizes__face__filename?: InputMaybe<Media_Sizes__Face__Filename_Operator>;
+  sizes__face__filesize?: InputMaybe<Media_Sizes__Face__Filesize_Operator>;
+  sizes__face__height?: InputMaybe<Media_Sizes__Face__Height_Operator>;
+  sizes__face__mimeType?: InputMaybe<Media_Sizes__Face__MimeType_Operator>;
+  sizes__face__url?: InputMaybe<Media_Sizes__Face__Url_Operator>;
+  sizes__face__width?: InputMaybe<Media_Sizes__Face__Width_Operator>;
   title?: InputMaybe<Media_Title_Operator>;
   updatedAt?: InputMaybe<Media_UpdatedAt_Operator>;
   url?: InputMaybe<Media_Url_Operator>;
@@ -2130,6 +2861,12 @@ export type Media_Where_And = {
   height?: InputMaybe<Media_Height_Operator>;
   id?: InputMaybe<Media_Id_Operator>;
   mimeType?: InputMaybe<Media_MimeType_Operator>;
+  sizes__face__filename?: InputMaybe<Media_Sizes__Face__Filename_Operator>;
+  sizes__face__filesize?: InputMaybe<Media_Sizes__Face__Filesize_Operator>;
+  sizes__face__height?: InputMaybe<Media_Sizes__Face__Height_Operator>;
+  sizes__face__mimeType?: InputMaybe<Media_Sizes__Face__MimeType_Operator>;
+  sizes__face__url?: InputMaybe<Media_Sizes__Face__Url_Operator>;
+  sizes__face__width?: InputMaybe<Media_Sizes__Face__Width_Operator>;
   title?: InputMaybe<Media_Title_Operator>;
   updatedAt?: InputMaybe<Media_UpdatedAt_Operator>;
   url?: InputMaybe<Media_Url_Operator>;
@@ -2146,6 +2883,12 @@ export type Media_Where_Or = {
   height?: InputMaybe<Media_Height_Operator>;
   id?: InputMaybe<Media_Id_Operator>;
   mimeType?: InputMaybe<Media_MimeType_Operator>;
+  sizes__face__filename?: InputMaybe<Media_Sizes__Face__Filename_Operator>;
+  sizes__face__filesize?: InputMaybe<Media_Sizes__Face__Filesize_Operator>;
+  sizes__face__height?: InputMaybe<Media_Sizes__Face__Height_Operator>;
+  sizes__face__mimeType?: InputMaybe<Media_Sizes__Face__MimeType_Operator>;
+  sizes__face__url?: InputMaybe<Media_Sizes__Face__Url_Operator>;
+  sizes__face__width?: InputMaybe<Media_Sizes__Face__Width_Operator>;
   title?: InputMaybe<Media_Title_Operator>;
   updatedAt?: InputMaybe<Media_UpdatedAt_Operator>;
   url?: InputMaybe<Media_Url_Operator>;
@@ -2504,6 +3247,69 @@ export type PageVersion_Version_Image_MimeType_Operator = {
   not_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
 };
 
+export type PageVersion_Version_Image_Sizes__Face__Filename_Operator = {
+  all?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  contains?: InputMaybe<Scalars['String']['input']>;
+  equals?: InputMaybe<Scalars['String']['input']>;
+  exists?: InputMaybe<Scalars['Boolean']['input']>;
+  in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  like?: InputMaybe<Scalars['String']['input']>;
+  not_equals?: InputMaybe<Scalars['String']['input']>;
+  not_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+};
+
+export type PageVersion_Version_Image_Sizes__Face__Filesize_Operator = {
+  equals?: InputMaybe<Scalars['Float']['input']>;
+  exists?: InputMaybe<Scalars['Boolean']['input']>;
+  greater_than?: InputMaybe<Scalars['Float']['input']>;
+  greater_than_equal?: InputMaybe<Scalars['Float']['input']>;
+  less_than?: InputMaybe<Scalars['Float']['input']>;
+  less_than_equal?: InputMaybe<Scalars['Float']['input']>;
+  not_equals?: InputMaybe<Scalars['Float']['input']>;
+};
+
+export type PageVersion_Version_Image_Sizes__Face__Height_Operator = {
+  equals?: InputMaybe<Scalars['Float']['input']>;
+  exists?: InputMaybe<Scalars['Boolean']['input']>;
+  greater_than?: InputMaybe<Scalars['Float']['input']>;
+  greater_than_equal?: InputMaybe<Scalars['Float']['input']>;
+  less_than?: InputMaybe<Scalars['Float']['input']>;
+  less_than_equal?: InputMaybe<Scalars['Float']['input']>;
+  not_equals?: InputMaybe<Scalars['Float']['input']>;
+};
+
+export type PageVersion_Version_Image_Sizes__Face__MimeType_Operator = {
+  all?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  contains?: InputMaybe<Scalars['String']['input']>;
+  equals?: InputMaybe<Scalars['String']['input']>;
+  exists?: InputMaybe<Scalars['Boolean']['input']>;
+  in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  like?: InputMaybe<Scalars['String']['input']>;
+  not_equals?: InputMaybe<Scalars['String']['input']>;
+  not_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+};
+
+export type PageVersion_Version_Image_Sizes__Face__Url_Operator = {
+  all?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  contains?: InputMaybe<Scalars['String']['input']>;
+  equals?: InputMaybe<Scalars['String']['input']>;
+  exists?: InputMaybe<Scalars['Boolean']['input']>;
+  in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  like?: InputMaybe<Scalars['String']['input']>;
+  not_equals?: InputMaybe<Scalars['String']['input']>;
+  not_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+};
+
+export type PageVersion_Version_Image_Sizes__Face__Width_Operator = {
+  equals?: InputMaybe<Scalars['Float']['input']>;
+  exists?: InputMaybe<Scalars['Boolean']['input']>;
+  greater_than?: InputMaybe<Scalars['Float']['input']>;
+  greater_than_equal?: InputMaybe<Scalars['Float']['input']>;
+  less_than?: InputMaybe<Scalars['Float']['input']>;
+  less_than_equal?: InputMaybe<Scalars['Float']['input']>;
+  not_equals?: InputMaybe<Scalars['Float']['input']>;
+};
+
 export type PageVersion_Version_Image_Title_Operator = {
   all?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   contains?: InputMaybe<Scalars['String']['input']>;
@@ -2546,6 +3352,12 @@ export type PageVersion_Version_Image_Where = {
   height?: InputMaybe<PageVersion_Version_Image_Height_Operator>;
   id?: InputMaybe<PageVersion_Version_Image_Id_Operator>;
   mimeType?: InputMaybe<PageVersion_Version_Image_MimeType_Operator>;
+  sizes__face__filename?: InputMaybe<PageVersion_Version_Image_Sizes__Face__Filename_Operator>;
+  sizes__face__filesize?: InputMaybe<PageVersion_Version_Image_Sizes__Face__Filesize_Operator>;
+  sizes__face__height?: InputMaybe<PageVersion_Version_Image_Sizes__Face__Height_Operator>;
+  sizes__face__mimeType?: InputMaybe<PageVersion_Version_Image_Sizes__Face__MimeType_Operator>;
+  sizes__face__url?: InputMaybe<PageVersion_Version_Image_Sizes__Face__Url_Operator>;
+  sizes__face__width?: InputMaybe<PageVersion_Version_Image_Sizes__Face__Width_Operator>;
   title?: InputMaybe<PageVersion_Version_Image_Title_Operator>;
   updatedAt?: InputMaybe<PageVersion_Version_Image_UpdatedAt_Operator>;
   url?: InputMaybe<PageVersion_Version_Image_Url_Operator>;
@@ -2562,6 +3374,12 @@ export type PageVersion_Version_Image_Where_And = {
   height?: InputMaybe<PageVersion_Version_Image_Height_Operator>;
   id?: InputMaybe<PageVersion_Version_Image_Id_Operator>;
   mimeType?: InputMaybe<PageVersion_Version_Image_MimeType_Operator>;
+  sizes__face__filename?: InputMaybe<PageVersion_Version_Image_Sizes__Face__Filename_Operator>;
+  sizes__face__filesize?: InputMaybe<PageVersion_Version_Image_Sizes__Face__Filesize_Operator>;
+  sizes__face__height?: InputMaybe<PageVersion_Version_Image_Sizes__Face__Height_Operator>;
+  sizes__face__mimeType?: InputMaybe<PageVersion_Version_Image_Sizes__Face__MimeType_Operator>;
+  sizes__face__url?: InputMaybe<PageVersion_Version_Image_Sizes__Face__Url_Operator>;
+  sizes__face__width?: InputMaybe<PageVersion_Version_Image_Sizes__Face__Width_Operator>;
   title?: InputMaybe<PageVersion_Version_Image_Title_Operator>;
   updatedAt?: InputMaybe<PageVersion_Version_Image_UpdatedAt_Operator>;
   url?: InputMaybe<PageVersion_Version_Image_Url_Operator>;
@@ -2578,6 +3396,12 @@ export type PageVersion_Version_Image_Where_Or = {
   height?: InputMaybe<PageVersion_Version_Image_Height_Operator>;
   id?: InputMaybe<PageVersion_Version_Image_Id_Operator>;
   mimeType?: InputMaybe<PageVersion_Version_Image_MimeType_Operator>;
+  sizes__face__filename?: InputMaybe<PageVersion_Version_Image_Sizes__Face__Filename_Operator>;
+  sizes__face__filesize?: InputMaybe<PageVersion_Version_Image_Sizes__Face__Filesize_Operator>;
+  sizes__face__height?: InputMaybe<PageVersion_Version_Image_Sizes__Face__Height_Operator>;
+  sizes__face__mimeType?: InputMaybe<PageVersion_Version_Image_Sizes__Face__MimeType_Operator>;
+  sizes__face__url?: InputMaybe<PageVersion_Version_Image_Sizes__Face__Url_Operator>;
+  sizes__face__width?: InputMaybe<PageVersion_Version_Image_Sizes__Face__Width_Operator>;
   title?: InputMaybe<PageVersion_Version_Image_Title_Operator>;
   updatedAt?: InputMaybe<PageVersion_Version_Image_UpdatedAt_Operator>;
   url?: InputMaybe<PageVersion_Version_Image_Url_Operator>;
@@ -2674,6 +3498,69 @@ export type Page_Image_MimeType_Operator = {
   not_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
 };
 
+export type Page_Image_Sizes__Face__Filename_Operator = {
+  all?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  contains?: InputMaybe<Scalars['String']['input']>;
+  equals?: InputMaybe<Scalars['String']['input']>;
+  exists?: InputMaybe<Scalars['Boolean']['input']>;
+  in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  like?: InputMaybe<Scalars['String']['input']>;
+  not_equals?: InputMaybe<Scalars['String']['input']>;
+  not_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+};
+
+export type Page_Image_Sizes__Face__Filesize_Operator = {
+  equals?: InputMaybe<Scalars['Float']['input']>;
+  exists?: InputMaybe<Scalars['Boolean']['input']>;
+  greater_than?: InputMaybe<Scalars['Float']['input']>;
+  greater_than_equal?: InputMaybe<Scalars['Float']['input']>;
+  less_than?: InputMaybe<Scalars['Float']['input']>;
+  less_than_equal?: InputMaybe<Scalars['Float']['input']>;
+  not_equals?: InputMaybe<Scalars['Float']['input']>;
+};
+
+export type Page_Image_Sizes__Face__Height_Operator = {
+  equals?: InputMaybe<Scalars['Float']['input']>;
+  exists?: InputMaybe<Scalars['Boolean']['input']>;
+  greater_than?: InputMaybe<Scalars['Float']['input']>;
+  greater_than_equal?: InputMaybe<Scalars['Float']['input']>;
+  less_than?: InputMaybe<Scalars['Float']['input']>;
+  less_than_equal?: InputMaybe<Scalars['Float']['input']>;
+  not_equals?: InputMaybe<Scalars['Float']['input']>;
+};
+
+export type Page_Image_Sizes__Face__MimeType_Operator = {
+  all?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  contains?: InputMaybe<Scalars['String']['input']>;
+  equals?: InputMaybe<Scalars['String']['input']>;
+  exists?: InputMaybe<Scalars['Boolean']['input']>;
+  in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  like?: InputMaybe<Scalars['String']['input']>;
+  not_equals?: InputMaybe<Scalars['String']['input']>;
+  not_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+};
+
+export type Page_Image_Sizes__Face__Url_Operator = {
+  all?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  contains?: InputMaybe<Scalars['String']['input']>;
+  equals?: InputMaybe<Scalars['String']['input']>;
+  exists?: InputMaybe<Scalars['Boolean']['input']>;
+  in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  like?: InputMaybe<Scalars['String']['input']>;
+  not_equals?: InputMaybe<Scalars['String']['input']>;
+  not_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+};
+
+export type Page_Image_Sizes__Face__Width_Operator = {
+  equals?: InputMaybe<Scalars['Float']['input']>;
+  exists?: InputMaybe<Scalars['Boolean']['input']>;
+  greater_than?: InputMaybe<Scalars['Float']['input']>;
+  greater_than_equal?: InputMaybe<Scalars['Float']['input']>;
+  less_than?: InputMaybe<Scalars['Float']['input']>;
+  less_than_equal?: InputMaybe<Scalars['Float']['input']>;
+  not_equals?: InputMaybe<Scalars['Float']['input']>;
+};
+
 export type Page_Image_Title_Operator = {
   all?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   contains?: InputMaybe<Scalars['String']['input']>;
@@ -2716,6 +3603,12 @@ export type Page_Image_Where = {
   height?: InputMaybe<Page_Image_Height_Operator>;
   id?: InputMaybe<Page_Image_Id_Operator>;
   mimeType?: InputMaybe<Page_Image_MimeType_Operator>;
+  sizes__face__filename?: InputMaybe<Page_Image_Sizes__Face__Filename_Operator>;
+  sizes__face__filesize?: InputMaybe<Page_Image_Sizes__Face__Filesize_Operator>;
+  sizes__face__height?: InputMaybe<Page_Image_Sizes__Face__Height_Operator>;
+  sizes__face__mimeType?: InputMaybe<Page_Image_Sizes__Face__MimeType_Operator>;
+  sizes__face__url?: InputMaybe<Page_Image_Sizes__Face__Url_Operator>;
+  sizes__face__width?: InputMaybe<Page_Image_Sizes__Face__Width_Operator>;
   title?: InputMaybe<Page_Image_Title_Operator>;
   updatedAt?: InputMaybe<Page_Image_UpdatedAt_Operator>;
   url?: InputMaybe<Page_Image_Url_Operator>;
@@ -2732,6 +3625,12 @@ export type Page_Image_Where_And = {
   height?: InputMaybe<Page_Image_Height_Operator>;
   id?: InputMaybe<Page_Image_Id_Operator>;
   mimeType?: InputMaybe<Page_Image_MimeType_Operator>;
+  sizes__face__filename?: InputMaybe<Page_Image_Sizes__Face__Filename_Operator>;
+  sizes__face__filesize?: InputMaybe<Page_Image_Sizes__Face__Filesize_Operator>;
+  sizes__face__height?: InputMaybe<Page_Image_Sizes__Face__Height_Operator>;
+  sizes__face__mimeType?: InputMaybe<Page_Image_Sizes__Face__MimeType_Operator>;
+  sizes__face__url?: InputMaybe<Page_Image_Sizes__Face__Url_Operator>;
+  sizes__face__width?: InputMaybe<Page_Image_Sizes__Face__Width_Operator>;
   title?: InputMaybe<Page_Image_Title_Operator>;
   updatedAt?: InputMaybe<Page_Image_UpdatedAt_Operator>;
   url?: InputMaybe<Page_Image_Url_Operator>;
@@ -2748,6 +3647,12 @@ export type Page_Image_Where_Or = {
   height?: InputMaybe<Page_Image_Height_Operator>;
   id?: InputMaybe<Page_Image_Id_Operator>;
   mimeType?: InputMaybe<Page_Image_MimeType_Operator>;
+  sizes__face__filename?: InputMaybe<Page_Image_Sizes__Face__Filename_Operator>;
+  sizes__face__filesize?: InputMaybe<Page_Image_Sizes__Face__Filesize_Operator>;
+  sizes__face__height?: InputMaybe<Page_Image_Sizes__Face__Height_Operator>;
+  sizes__face__mimeType?: InputMaybe<Page_Image_Sizes__Face__MimeType_Operator>;
+  sizes__face__url?: InputMaybe<Page_Image_Sizes__Face__Url_Operator>;
+  sizes__face__width?: InputMaybe<Page_Image_Sizes__Face__Width_Operator>;
   title?: InputMaybe<Page_Image_Title_Operator>;
   updatedAt?: InputMaybe<Page_Image_UpdatedAt_Operator>;
   url?: InputMaybe<Page_Image_Url_Operator>;
@@ -2820,6 +3725,7 @@ export type Page_Id_Operator = {
 
 export type Page_Image_Operator = {
   equals?: InputMaybe<Scalars['String']['input']>;
+  exists?: InputMaybe<Scalars['Boolean']['input']>;
   not_equals?: InputMaybe<Scalars['String']['input']>;
 };
 
@@ -5251,6 +6157,7 @@ export type MutationMediaInput = {
   filesize?: InputMaybe<Scalars['Float']['input']>;
   height?: InputMaybe<Scalars['Float']['input']>;
   mimeType?: InputMaybe<Scalars['String']['input']>;
+  sizes?: InputMaybe<MutationMedia_SizesInput>;
   title?: InputMaybe<Scalars['String']['input']>;
   updatedAt?: InputMaybe<Scalars['String']['input']>;
   url?: InputMaybe<Scalars['String']['input']>;
@@ -5264,8 +6171,35 @@ export type MutationMediaUpdateInput = {
   filesize?: InputMaybe<Scalars['Float']['input']>;
   height?: InputMaybe<Scalars['Float']['input']>;
   mimeType?: InputMaybe<Scalars['String']['input']>;
+  sizes?: InputMaybe<MutationMediaUpdate_SizesInput>;
   title?: InputMaybe<Scalars['String']['input']>;
   updatedAt?: InputMaybe<Scalars['String']['input']>;
+  url?: InputMaybe<Scalars['String']['input']>;
+  width?: InputMaybe<Scalars['Float']['input']>;
+};
+
+export type MutationMediaUpdate_SizesInput = {
+  face?: InputMaybe<MutationMediaUpdate_Sizes_FaceInput>;
+};
+
+export type MutationMediaUpdate_Sizes_FaceInput = {
+  filename?: InputMaybe<Scalars['String']['input']>;
+  filesize?: InputMaybe<Scalars['Float']['input']>;
+  height?: InputMaybe<Scalars['Float']['input']>;
+  mimeType?: InputMaybe<Scalars['String']['input']>;
+  url?: InputMaybe<Scalars['String']['input']>;
+  width?: InputMaybe<Scalars['Float']['input']>;
+};
+
+export type MutationMedia_SizesInput = {
+  face?: InputMaybe<MutationMedia_Sizes_FaceInput>;
+};
+
+export type MutationMedia_Sizes_FaceInput = {
+  filename?: InputMaybe<Scalars['String']['input']>;
+  filesize?: InputMaybe<Scalars['Float']['input']>;
+  height?: InputMaybe<Scalars['Float']['input']>;
+  mimeType?: InputMaybe<Scalars['String']['input']>;
   url?: InputMaybe<Scalars['String']['input']>;
   width?: InputMaybe<Scalars['Float']['input']>;
 };
@@ -5274,7 +6208,7 @@ export type MutationPageInput = {
   _status?: InputMaybe<Page__Status_MutationInput>;
   content?: InputMaybe<Scalars['JSON']['input']>;
   createdAt?: InputMaybe<Scalars['String']['input']>;
-  image: Scalars['String']['input'];
+  image?: InputMaybe<Scalars['String']['input']>;
   slug?: InputMaybe<Scalars['String']['input']>;
   title?: InputMaybe<Scalars['String']['input']>;
   updatedAt?: InputMaybe<Scalars['String']['input']>;
@@ -5875,6 +6809,7 @@ export type VersionsPage_Version__CreatedAt_Operator = {
 
 export type VersionsPage_Version__Image_Operator = {
   equals?: InputMaybe<Scalars['String']['input']>;
+  exists?: InputMaybe<Scalars['Boolean']['input']>;
   not_equals?: InputMaybe<Scalars['String']['input']>;
 };
 
@@ -5975,7 +6910,7 @@ export type VersionsPages = {
   totalPages?: Maybe<Scalars['Int']['output']>;
 };
 
-export type ImageFragment = { __typename?: 'Media', id?: string | null, title?: string | null, url?: string | null, alt?: string | null, mimeType?: string | null };
+export type ImageFragment = { __typename?: 'Media', id?: string | null, title?: string | null, url?: string | null, alt?: string | null, mimeType?: string | null, sizes?: { __typename?: 'Media_Sizes', face?: { __typename?: 'Media_Sizes_Face', url?: string | null, mimeType?: string | null } | null } | null };
 
 export type NavigationItemFragment = { __typename?: 'MainNavigation_Items', id?: string | null, title?: string | null, url: string };
 
@@ -5984,7 +6919,7 @@ export type HomePageQueryVariables = Exact<{
 }>;
 
 
-export type HomePageQuery = { __typename?: 'Query', HomePage?: { __typename?: 'HomePage', title?: string | null, content?: any | null, updatedAt?: any | null, image?: { __typename?: 'Media', id?: string | null, title?: string | null, url?: string | null, alt?: string | null, mimeType?: string | null } | null } | null };
+export type HomePageQuery = { __typename?: 'Query', HomePage?: { __typename?: 'HomePage', title?: string | null, content?: any | null, updatedAt?: any | null, image?: { __typename?: 'Media', id?: string | null, title?: string | null, url?: string | null, alt?: string | null, mimeType?: string | null, sizes?: { __typename?: 'Media_Sizes', face?: { __typename?: 'Media_Sizes_Face', url?: string | null, mimeType?: string | null } | null } | null } | null } | null };
 
 export type MainNavigationQueryVariables = Exact<{
   locale: LocaleInputType;
@@ -5999,7 +6934,7 @@ export type PageQueryVariables = Exact<{
 }>;
 
 
-export type PageQuery = { __typename?: 'Query', Page?: { __typename?: 'Page', title?: string | null, slug?: string | null, content?: any | null, updatedAt?: any | null, image?: { __typename?: 'Media', id?: string | null, title?: string | null, url?: string | null, alt?: string | null, mimeType?: string | null } | null } | null };
+export type PageQuery = { __typename?: 'Query', Page?: { __typename?: 'Page', title?: string | null, slug?: string | null, content?: any | null, updatedAt?: any | null, image?: { __typename?: 'Media', id?: string | null, title?: string | null, url?: string | null, alt?: string | null, mimeType?: string | null, sizes?: { __typename?: 'Media_Sizes', face?: { __typename?: 'Media_Sizes_Face', url?: string | null, mimeType?: string | null } | null } | null } | null } | null };
 
 export type RedirectQueryVariables = Exact<{
   path: Scalars['String']['input'];
@@ -6008,9 +6943,9 @@ export type RedirectQueryVariables = Exact<{
 
 export type RedirectQuery = { __typename?: 'Query', Redirects?: { __typename?: 'Redirects', docs?: Array<{ __typename?: 'Redirect', id?: string | null, from: string, createdAt?: any | null, updatedAt?: any | null, to?: { __typename: 'Redirect_To', url?: string | null, reference?: { __typename?: 'Redirect_To_Reference_Relationship', relationTo?: Redirect_To_Reference_RelationTo | null, value?: { __typename: 'Page', id?: string | null, slug?: string | null } | null } | null } | null } | null> | null } | null };
 
-export const ImageFragmentDoc = {"kind":"Document","definitions":[{"kind":"FragmentDefinition","name":{"kind":"Name","value":"Image"},"typeCondition":{"kind":"NamedType","name":{"kind":"Name","value":"Media"}},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"id"}},{"kind":"Field","name":{"kind":"Name","value":"title"}},{"kind":"Field","name":{"kind":"Name","value":"url"}},{"kind":"Field","name":{"kind":"Name","value":"alt"}},{"kind":"Field","name":{"kind":"Name","value":"mimeType"}}]}}]} as unknown as DocumentNode<ImageFragment, unknown>;
+export const ImageFragmentDoc = {"kind":"Document","definitions":[{"kind":"FragmentDefinition","name":{"kind":"Name","value":"Image"},"typeCondition":{"kind":"NamedType","name":{"kind":"Name","value":"Media"}},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"id"}},{"kind":"Field","name":{"kind":"Name","value":"title"}},{"kind":"Field","name":{"kind":"Name","value":"url"}},{"kind":"Field","name":{"kind":"Name","value":"alt"}},{"kind":"Field","name":{"kind":"Name","value":"mimeType"}},{"kind":"Field","name":{"kind":"Name","value":"sizes"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"face"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"url"}},{"kind":"Field","name":{"kind":"Name","value":"mimeType"}}]}}]}}]}}]} as unknown as DocumentNode<ImageFragment, unknown>;
 export const NavigationItemFragmentDoc = {"kind":"Document","definitions":[{"kind":"FragmentDefinition","name":{"kind":"Name","value":"NavigationItem"},"typeCondition":{"kind":"NamedType","name":{"kind":"Name","value":"MainNavigation_Items"}},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"id"}},{"kind":"Field","name":{"kind":"Name","value":"title"}},{"kind":"Field","name":{"kind":"Name","value":"url"}}]}}]} as unknown as DocumentNode<NavigationItemFragment, unknown>;
-export const HomePageDocument = {"kind":"Document","definitions":[{"kind":"OperationDefinition","operation":"query","name":{"kind":"Name","value":"HomePage"},"variableDefinitions":[{"kind":"VariableDefinition","variable":{"kind":"Variable","name":{"kind":"Name","value":"locale"}},"type":{"kind":"NonNullType","type":{"kind":"NamedType","name":{"kind":"Name","value":"LocaleInputType"}}}}],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"HomePage"},"arguments":[{"kind":"Argument","name":{"kind":"Name","value":"draft"},"value":{"kind":"BooleanValue","value":false}},{"kind":"Argument","name":{"kind":"Name","value":"locale"},"value":{"kind":"Variable","name":{"kind":"Name","value":"locale"}}}],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"title"}},{"kind":"Field","name":{"kind":"Name","value":"content"}},{"kind":"Field","name":{"kind":"Name","value":"image"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"FragmentSpread","name":{"kind":"Name","value":"Image"}}]}},{"kind":"Field","name":{"kind":"Name","value":"updatedAt"}}]}}]}},{"kind":"FragmentDefinition","name":{"kind":"Name","value":"Image"},"typeCondition":{"kind":"NamedType","name":{"kind":"Name","value":"Media"}},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"id"}},{"kind":"Field","name":{"kind":"Name","value":"title"}},{"kind":"Field","name":{"kind":"Name","value":"url"}},{"kind":"Field","name":{"kind":"Name","value":"alt"}},{"kind":"Field","name":{"kind":"Name","value":"mimeType"}}]}}]} as unknown as DocumentNode<HomePageQuery, HomePageQueryVariables>;
+export const HomePageDocument = {"kind":"Document","definitions":[{"kind":"OperationDefinition","operation":"query","name":{"kind":"Name","value":"HomePage"},"variableDefinitions":[{"kind":"VariableDefinition","variable":{"kind":"Variable","name":{"kind":"Name","value":"locale"}},"type":{"kind":"NonNullType","type":{"kind":"NamedType","name":{"kind":"Name","value":"LocaleInputType"}}}}],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"HomePage"},"arguments":[{"kind":"Argument","name":{"kind":"Name","value":"draft"},"value":{"kind":"BooleanValue","value":false}},{"kind":"Argument","name":{"kind":"Name","value":"locale"},"value":{"kind":"Variable","name":{"kind":"Name","value":"locale"}}}],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"title"}},{"kind":"Field","name":{"kind":"Name","value":"content"}},{"kind":"Field","name":{"kind":"Name","value":"image"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"FragmentSpread","name":{"kind":"Name","value":"Image"}}]}},{"kind":"Field","name":{"kind":"Name","value":"updatedAt"}}]}}]}},{"kind":"FragmentDefinition","name":{"kind":"Name","value":"Image"},"typeCondition":{"kind":"NamedType","name":{"kind":"Name","value":"Media"}},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"id"}},{"kind":"Field","name":{"kind":"Name","value":"title"}},{"kind":"Field","name":{"kind":"Name","value":"url"}},{"kind":"Field","name":{"kind":"Name","value":"alt"}},{"kind":"Field","name":{"kind":"Name","value":"mimeType"}},{"kind":"Field","name":{"kind":"Name","value":"sizes"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"face"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"url"}},{"kind":"Field","name":{"kind":"Name","value":"mimeType"}}]}}]}}]}}]} as unknown as DocumentNode<HomePageQuery, HomePageQueryVariables>;
 export const MainNavigationDocument = {"kind":"Document","definitions":[{"kind":"OperationDefinition","operation":"query","name":{"kind":"Name","value":"MainNavigation"},"variableDefinitions":[{"kind":"VariableDefinition","variable":{"kind":"Variable","name":{"kind":"Name","value":"locale"}},"type":{"kind":"NonNullType","type":{"kind":"NamedType","name":{"kind":"Name","value":"LocaleInputType"}}}}],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"MainNavigation"},"arguments":[{"kind":"Argument","name":{"kind":"Name","value":"draft"},"value":{"kind":"BooleanValue","value":false}},{"kind":"Argument","name":{"kind":"Name","value":"locale"},"value":{"kind":"Variable","name":{"kind":"Name","value":"locale"}}}],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"updatedAt"}},{"kind":"Field","name":{"kind":"Name","value":"items"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"FragmentSpread","name":{"kind":"Name","value":"NavigationItem"}}]}}]}}]}},{"kind":"FragmentDefinition","name":{"kind":"Name","value":"NavigationItem"},"typeCondition":{"kind":"NamedType","name":{"kind":"Name","value":"MainNavigation_Items"}},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"id"}},{"kind":"Field","name":{"kind":"Name","value":"title"}},{"kind":"Field","name":{"kind":"Name","value":"url"}}]}}]} as unknown as DocumentNode<MainNavigationQuery, MainNavigationQueryVariables>;
-export const PageDocument = {"kind":"Document","definitions":[{"kind":"OperationDefinition","operation":"query","name":{"kind":"Name","value":"Page"},"variableDefinitions":[{"kind":"VariableDefinition","variable":{"kind":"Variable","name":{"kind":"Name","value":"locale"}},"type":{"kind":"NonNullType","type":{"kind":"NamedType","name":{"kind":"Name","value":"LocaleInputType"}}}},{"kind":"VariableDefinition","variable":{"kind":"Variable","name":{"kind":"Name","value":"id"}},"type":{"kind":"NonNullType","type":{"kind":"NamedType","name":{"kind":"Name","value":"String"}}}}],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"Page"},"arguments":[{"kind":"Argument","name":{"kind":"Name","value":"draft"},"value":{"kind":"BooleanValue","value":false}},{"kind":"Argument","name":{"kind":"Name","value":"locale"},"value":{"kind":"Variable","name":{"kind":"Name","value":"locale"}}},{"kind":"Argument","name":{"kind":"Name","value":"id"},"value":{"kind":"Variable","name":{"kind":"Name","value":"id"}}}],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"title"}},{"kind":"Field","name":{"kind":"Name","value":"slug"}},{"kind":"Field","name":{"kind":"Name","value":"content"}},{"kind":"Field","name":{"kind":"Name","value":"image"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"FragmentSpread","name":{"kind":"Name","value":"Image"}}]}},{"kind":"Field","name":{"kind":"Name","value":"updatedAt"}}]}}]}},{"kind":"FragmentDefinition","name":{"kind":"Name","value":"Image"},"typeCondition":{"kind":"NamedType","name":{"kind":"Name","value":"Media"}},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"id"}},{"kind":"Field","name":{"kind":"Name","value":"title"}},{"kind":"Field","name":{"kind":"Name","value":"url"}},{"kind":"Field","name":{"kind":"Name","value":"alt"}},{"kind":"Field","name":{"kind":"Name","value":"mimeType"}}]}}]} as unknown as DocumentNode<PageQuery, PageQueryVariables>;
+export const PageDocument = {"kind":"Document","definitions":[{"kind":"OperationDefinition","operation":"query","name":{"kind":"Name","value":"Page"},"variableDefinitions":[{"kind":"VariableDefinition","variable":{"kind":"Variable","name":{"kind":"Name","value":"locale"}},"type":{"kind":"NonNullType","type":{"kind":"NamedType","name":{"kind":"Name","value":"LocaleInputType"}}}},{"kind":"VariableDefinition","variable":{"kind":"Variable","name":{"kind":"Name","value":"id"}},"type":{"kind":"NonNullType","type":{"kind":"NamedType","name":{"kind":"Name","value":"String"}}}}],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"Page"},"arguments":[{"kind":"Argument","name":{"kind":"Name","value":"draft"},"value":{"kind":"BooleanValue","value":false}},{"kind":"Argument","name":{"kind":"Name","value":"locale"},"value":{"kind":"Variable","name":{"kind":"Name","value":"locale"}}},{"kind":"Argument","name":{"kind":"Name","value":"id"},"value":{"kind":"Variable","name":{"kind":"Name","value":"id"}}},{"kind":"Argument","name":{"kind":"Name","value":"fallbackLocale"},"value":{"kind":"EnumValue","value":"cs"}}],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"title"}},{"kind":"Field","name":{"kind":"Name","value":"slug"}},{"kind":"Field","name":{"kind":"Name","value":"content"}},{"kind":"Field","name":{"kind":"Name","value":"image"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"FragmentSpread","name":{"kind":"Name","value":"Image"}}]}},{"kind":"Field","name":{"kind":"Name","value":"updatedAt"}}]}}]}},{"kind":"FragmentDefinition","name":{"kind":"Name","value":"Image"},"typeCondition":{"kind":"NamedType","name":{"kind":"Name","value":"Media"}},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"id"}},{"kind":"Field","name":{"kind":"Name","value":"title"}},{"kind":"Field","name":{"kind":"Name","value":"url"}},{"kind":"Field","name":{"kind":"Name","value":"alt"}},{"kind":"Field","name":{"kind":"Name","value":"mimeType"}},{"kind":"Field","name":{"kind":"Name","value":"sizes"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"face"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"url"}},{"kind":"Field","name":{"kind":"Name","value":"mimeType"}}]}}]}}]}}]} as unknown as DocumentNode<PageQuery, PageQueryVariables>;
 export const RedirectDocument = {"kind":"Document","definitions":[{"kind":"OperationDefinition","operation":"query","name":{"kind":"Name","value":"Redirect"},"variableDefinitions":[{"kind":"VariableDefinition","variable":{"kind":"Variable","name":{"kind":"Name","value":"path"}},"type":{"kind":"NonNullType","type":{"kind":"NamedType","name":{"kind":"Name","value":"String"}}}}],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"Redirects"},"arguments":[{"kind":"Argument","name":{"kind":"Name","value":"where"},"value":{"kind":"ObjectValue","fields":[{"kind":"ObjectField","name":{"kind":"Name","value":"from"},"value":{"kind":"ObjectValue","fields":[{"kind":"ObjectField","name":{"kind":"Name","value":"equals"},"value":{"kind":"Variable","name":{"kind":"Name","value":"path"}}}]}}]}},{"kind":"Argument","name":{"kind":"Name","value":"limit"},"value":{"kind":"IntValue","value":"1"}},{"kind":"Argument","name":{"kind":"Name","value":"page"},"value":{"kind":"IntValue","value":"1"}}],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"docs"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"id"}},{"kind":"Field","name":{"kind":"Name","value":"from"}},{"kind":"Field","name":{"kind":"Name","value":"to"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"url"}},{"kind":"Field","name":{"kind":"Name","value":"__typename"}},{"kind":"Field","name":{"kind":"Name","value":"reference"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"relationTo"}},{"kind":"Field","name":{"kind":"Name","value":"value"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"__typename"}},{"kind":"InlineFragment","typeCondition":{"kind":"NamedType","name":{"kind":"Name","value":"Page"}},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"id"}},{"kind":"Field","name":{"kind":"Name","value":"slug"}}]}}]}}]}}]}},{"kind":"Field","name":{"kind":"Name","value":"createdAt"}},{"kind":"Field","name":{"kind":"Name","value":"updatedAt"}}]}}]}}]}}]} as unknown as DocumentNode<RedirectQuery, RedirectQueryVariables>;
