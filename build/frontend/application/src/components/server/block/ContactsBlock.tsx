@@ -11,14 +11,14 @@ export default function ContactsBlock ({ fields }: {
       {fields.items.map(item => {
         return <div className={'col p-0'}>
           <div key={item.id} className="card text-center m-1">
-            <MediaImage media={item.image} sizeName={'face'} className={'card-img-top'}/>
-            <div className="card-body">
+            <div className={'card-header'}>
               <h5 className="card-title">{item.name}</h5>
-              <h6 className="card-text">{item.role}</h6>
-              {item.content !== null && item.content !== undefined
-                ? <Content className={'text-start'} content={item.content}/>
-                : ''}
+              <h6 className="card-subtitle">{item.role}</h6>
             </div>
+            <MediaImage media={item.image} sizeName={'face'} className={item.content !== null && item.content !== undefined ? '' : 'card-img-bottom'}/>
+            {item.content !== null && item.content !== undefined
+              ? <Content className={'card-body card-text text-start'} content={item.content}/>
+              : ''}
           </div>
         </div>
       })}
