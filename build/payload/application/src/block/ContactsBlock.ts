@@ -31,7 +31,13 @@ const ContactsBlock: Block = {
             }
           ]
         },
-        ImageField()
+        ImageField(),
+        {
+          type: 'richText',
+          name: 'content',
+          required: false,
+          localized: true
+        }
       ]
     }
   ]
