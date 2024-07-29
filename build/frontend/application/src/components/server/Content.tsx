@@ -2,7 +2,7 @@ import { ReactElement } from 'react'
 import Block from './Block'
 import Heading from './Heading'
 import Link from 'next/link'
-import {getCurrentLocale} from "../../locales/CurtrentLocale";
+import { getCurrentLocale } from '../../locales/CurtrentLocale'
 
 const Children = ({ content }: { content?: any }): ReactElement => {
   if (content === null || content === undefined || content.children === undefined || content.children === null) {
@@ -42,7 +42,14 @@ const Item = ({ content }: { content?: any }): ReactElement => {
         : (<a href={content.fields.url} target={content?.fields?.newTab === true ? '_blank' : ''}>
             <Children content={content}/>
           </a>)
-
+    case 'autolink':
+      if (content?.fields?.linkType === 'custom') {
+        return (<a href={content.fields.url} target={content?.fields?.newTab === true ? '_blank' : ''}>
+          <Children content={content}/>
+        </a>)
+      }
+      console.log('unknown autolink type', content)
+      return <></>
     default:
       console.log('Unknown content', content)
       return <></>
